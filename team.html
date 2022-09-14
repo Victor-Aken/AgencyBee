@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- ......Header Section....... -->
+    <header>
+        <div class="logo"><h1>AgencyBee</h1></div>
+        <div class="profile_container" id="profile">
+            <div style="margin-right:4px;"><img src="images/icons8-male-user-24 (1).png" alt=""></div>
+            <p style="color: #003559;">My Account</p>
+        </div>
+        <div class="profile-dropdown" id="profile-dropdown">
+            <div class="profile-dropdown-heading">
+                <div class="profile-icon"><img src="./images/icons8-male-user-96.png" alt=""></div>
+                <div class="profile-details">
+                    <h2>Victor Aken</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ...Content and Sidebar ..... -->
+    <div class="content_sidebar">
+        <!-- .......Side Bar ............ -->
+        <div class="side_bar">
+            <div class="side_bar_btn">
+                <a href="home_page.html" style="margin-top: 20px;">
+                    <div><img style="width: 22px;" src="images/icons8-home-50.png" alt=""></div>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="dashboard.html">
+                    <div><img src="images/icons8-asset-64.png" alt=""></div>
+                    <p>Assets</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="">
+                    <div><img src="images/icons8-form-24.png" alt=""></div>
+                    <p>Form</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="">
+                    <div><img style="width: 24px;" src="images/icons8-laptop-play-video-48.png" alt=""></div>
+                    <p>Video Kit</p>
+                </a>
+            </div>
+            <div class="side_bar_btn_team">
+                <a href="team.html">
+                    <div><img style="width: 24px;" src="images/icons8-management-24 (1).png" alt=""></div>
+                    <p>Team</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="reseller_page.html">
+                    <div><img style="width: 24px;" src="images/icons8-credit-card-50.png" alt=""></div>
+                    <p>Reseller</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="whitelabel_page.html">
+                    <div><img style="width: 24px;" src="images/icons8-add-bookmark-50.png" alt=""></div>
+                    <p>Whitelabel</p>
+                </a>
+            </div>
+            <div class="side_bar_btn" style="margin-top: 150px;">
+                <a href="">
+                    <div><img style="width: 24px;" src="images/icons8-inquiry-24.png" alt=""></div>
+                    <p>Support</p>
+                </a>
+            </div>
+
+            <div class="side_bar_btn" style="margin-top: 0px;">
+                <a href="">
+                    <div><img style="width: 24px;" src="images/icons8-logout-48.png" alt=""></div>
+                    <p>Logout</p>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- ......Content Section ...... -->
+        <div class="content_container">
+            <div class="heading">
+                <p style="font-size: 22px;">Team Members</p>
+
+                <div class="add_team_member_btn" id="add_team_member_btn">
+                    <div><img src="./images/icons8-plus-24.png" alt=""></div>
+                    <p> Add team Member</p>
+                </div>
+            </div>
+
+            <!-- ...Table .... -->
+            <div class="table_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Created on</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>status</th>
+                            <th style="text-align: center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>September 13, 2022</td>
+                            <td>Victor Aken</td>
+                            <td>akenvictor@gmail.com</td>
+                            <td>123456</td>
+                            <td>Active</td>
+                            <td style="text-align: right;">
+                                <input type="button" value="Edit">
+                                <input type="button" value="Remove">
+                                <input type="button" value="Inactive">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>September 13, 2022</td>
+                            <td>Victor Aken</td>
+                            <td>akenvictor@gmail.com</td>
+                            <td>123456</td>
+                            <td>Active</td>
+                            <td style="text-align: right;">
+                                <input type="button" value="Edit">
+                                <input type="button" value="Remove">
+                                <input type="button" value="Inactive">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ....Add Member Form .... -->
+            <div class="add_member_form" id="add_member_form">
+                <form action="">
+                    <div class="heading">
+                        <h2>Add Team Member</h2>
+                        <div style="cursor: pointer;" id="close_add_member_form"><img src="./images/icons8-close-24.png" alt=""></div>
+                    </div>
+
+                    <div class="input">
+                        <p>First Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <p>Last Name</p>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <p>Email</p>
+                        <input type="email">
+                    </div>
+                    <div class="input">
+                        <p>Password</p>
+                        <input type="password">
+                    </div>
+                    <div class="select">
+                        <div>
+                            <select name="" id="">
+                                <option value="" selected disabled>Select Project</option>
+                                <option value="">Project 1</option>
+                                <option value="">Project 2</option>
+                                <option value="">Project 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Add Team Member">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ... Overlay ..... -->
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </div>
+    
+<script src="dashboard.js"></script>
+<script src="team.js"></script>
+</body>
+</html>

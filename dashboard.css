@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background-color: white;
+}
+
+/* .....Header Section...... */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    padding-left: 30px;
+    background-color: #F6F6F8;
+    z-index: 1;
+}
+
+header .logo{
+    color: #003559;
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+}
+
+header .profile_container{
+    display: flex;
+    align-items: center;
+    padding-right: 90px;
+    cursor: pointer;
+}
+
+/* ...Profile Dropdown ... */
+.profile-dropdown{
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 7px rgb(223, 222, 222);
+    transition: all 0.05s ease-in;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.profile-dropdown .profile-dropdown-heading{
+    display: flex;
+    background-color: #F6F6F8;
+    margin-left: -10px;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-left: 10px;
+   padding-bottom: 10px;
+    border-radius: 20px 20px 0 0;
+}
+
+.profile-dropdown .profile-dropdown-heading .profile-icon img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.profile-dropdown.show{
+   opacity: 1;
+   pointer-events: visible;  
+}
+
+
+
+
+
+/* ...... Content and Sidebar .... */
+.content_sidebar{
+    display: flex;
+}
+
+
+
+/* .....Side Bar ....... */
+.side_bar{
+    height: 100vh;
+    width: 300px;
+    background-color: #F6F6F8;
+    position: fixed;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    /* justify-content: center; */
+}
+
+.side_bar .side_bar_btn_asset a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #003559;
+    height: 50px;
+    width: 210px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-left: 30px;
+}
+.side_bar .side_bar_btn_asset a:hover{
+    
+}
+
+.side_bar .side_bar_btn_asset a img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+.side_bar .side_bar_btn a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #003559;
+    background-color: #F6F6F8;
+    height: 50px;
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-left: 30px;
+    transition: all 0.4s ease-in-out;
+    font-weight: 400;
+}
+
+.side_bar .side_bar_btn a:hover{
+    background-color: #2e9ce679;
+    padding-left: 40px;
+}
+
+.side_bar .side_bar_btn a img{
+    width: 26px;
+    margin-right: 10px;
+}
+
+
+
+
+/* .....Content Section..... */
+.content_container{
+    margin-top: 70px;
+    margin-left: 300px;
+    width: calc(100vw - 300px);
+    padding: 50px 50px;
+}
+
+
+
+.content_container .cards_container{
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: repeat(3, 340px); */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+
+/* ... Top Three Cards .... */
+.top_cards_container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.top_cards_container .card{
+    border-radius: 10px;
+
+    background-color: #b8dcf579;
+
+    transition: all 0.4s ease-in-out;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.top_cards_container .card a{
+    text-decoration: none;
+}
+
+
+.content_container .top_cards_container .card:hover{
+    transform: scale(1.05);
+}
+
+/* ..... End Of Top Three Cards ...... */
+
+
+
+
+.content_container .cards_container .card{
+    border-radius: 10px;
+
+    background-color: #b8dcf579;
+    transition: all 0.4s ease-in-out;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.content_container .cards_container .card:hover{
+    transform: scale(1.05);
+}
+
+.content_container .cards_container .card a{
+    text-decoration: none;
+}
+
+
+.card h2{
+    color: #003559;
+    margin-top: 24px;
+}
+
+.card p{
+   font-size: 14px;
+   margin-top: 8px;
+   color: #003559;
+}
+
+
+/* .......MEDIA QUERIES ....... */
+
+/* ... Height <= 1200px */
+@media screen and (max-width: 1199px) {
+    .content_container .cards_container, .content_container .top_cards_container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+/* ... Height <= 992px */
+@media screen and (max-width: 992px) {
+    .content_container .cards_container, .content_container .top_cards_container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

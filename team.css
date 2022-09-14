@@ -1,0 +1,202 @@
+
+.side_bar .side_bar_btn_team a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #003559;
+    height: 50px;
+    width: 210px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-left: 30px;
+}
+
+.side_bar .side_bar_btn_team a img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* .....Content ....... */
+.content_container{
+    padding: 80px 80px;
+}
+
+.content_container .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content_container .add_team_member_btn{
+    text-decoration: none;
+    background-color: #003559;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content_container .add_team_member_btn img{
+    width: 16px;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+
+
+.content_container .add_team_member_btn:hover{
+    background-color: white;
+    color: #003559;
+    border: 1px solid #003559;
+    padding: 9px 19px;
+}
+
+
+.content_container .table_container{
+    margin-top: 60px; 
+}
+
+.content_container .table_container table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table_container table tr{
+  
+}
+
+.content_container .table_container table thead{
+   
+}
+
+.content_container .table_container table tr td, th{
+    border-bottom: 1px solid rgb(221, 216, 216);
+    padding: 8px 0 8px 4px;
+}
+
+
+
+.content_container .table_container table input[type="button"]{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(226, 224, 224);
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 13px;
+    
+}
+
+
+/* ..... Add Member Form ..... */
+.add_member_form{
+    border-radius: 20px;
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    height: fit-content;
+    width: 600px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.add_member_form.active{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.add_member_form form .heading{
+    margin-bottom: 20px;
+}
+
+.add_member_form form .heading img{
+    /* padding-right: 38px; */
+}
+
+.add_member_form form .input{
+    margin-bottom: 10px;
+}
+
+.add_member_form form .input p{
+    margin-bottom: 4px;
+}
+
+.add_member_form form .input input{
+    margin-bottom: 15px;
+    border-radius: 6px;
+    height: 36px;
+    width: 98%;
+    border: 1px solid rgb(211, 209, 209);
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.add_member_form form .input input:focus{
+    border: 1px solid #2e9ce679;
+}
+
+.add_member_form form .select{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_member_form form .select select{
+    width: 320px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgb(211, 209, 209);
+}
+
+.add_member_form form .select select:focus{
+    border: 1px solid #2e9ce679;
+}
+
+
+
+
+.add_member_form form .select input{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #003559;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*  ...... Overlay ...... */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: none;
+    transition: all 0.4s ease-in-out;
+}

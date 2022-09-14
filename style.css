@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #e0aaff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.form_container{
+    background-color: white;
+    height: 100vh;
+    width:50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container form{
+
+}
+
+
+
+.form_container form h2{
+    font-size: 34px;
+    margin-bottom: 22px;
+    color: #003559;
+}
+
+.form_container form p{
+    /* margin-bottom: 18px; */
+}
+
+.form_container form a{
+    text-decoration: none;
+    color: #003559;
+}
+
+.form_container form input{
+    height: 50px;
+    width: 30vw;
+    border: 1px solid #ced4da;
+    background-color: #f4f4f5;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-left: 18px;
+    font-size: 16px;
+    outline: none;
+}
+.form_container form input:focus{
+    border: 1px solid #003559;
+}
+
+.form_container form input::placeholder{
+    font-size: 16px;
+}
+
+.form_container form input[type="password"]{
+    font-size: 18px;
+}
+
+.password_container{
+    display: flex;
+    align-items: center;
+}
+.show_password{
+    margin-left: -40px;
+    margin-top: -14px;
+    cursor: pointer;
+}
+.show_password img{
+    width: 22px;
+}
+
+.hide_password{
+    margin-left: -40px;
+    margin-top: -14px;
+    display: none;
+    cursor: pointer;
+}
+.hide_password img{
+    width: 22px;
+}
+
+
+
+
+.form_container form input[type="submit"]{
+    /* background-color: #8030F3; */
+    background-color: #003559;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    transition: all 0.25s ease-in;
+}
+
+.form_container form input[type="submit"]:hover{
+    opacity: 0.8;
+
+}
+
+
+.side_image{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+}
+
+.side_image::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #003559;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+}
+
+.side_image img{
+    width: 100%;
+    height: 100%;
+}
+
