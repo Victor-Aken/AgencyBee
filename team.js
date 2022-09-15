@@ -15,3 +15,11 @@ closeMemberForm.addEventListener( 'click', () => {
     addTeamMemberForm.classList.remove('active');
     overlay.style.display = "none";
 })
+
+let overlay = document.getElementById('overlay');
+overlay.addEventListener( 'click', (e) => {
+    if( e.target !== addTeamMemberForm ){
+        addTeamMemberForm.classList.remove('active');
+        overlay.style.display = "none";
+    }
+})

@@ -39,15 +39,17 @@ header .profile_container{
 .profile-dropdown{
     position: absolute;
     right: 80px;
-    top: 80px;
+    top: 50px;
     width: 320px;
     height: 450px;
     border-radius: 20px;
     padding-top: 20px;
     padding-left: 10px;
     background-color: white;
-    box-shadow: 1px 1px 7px rgb(223, 222, 222);
-    transition: all 0.05s ease-in;
+    /* box-shadow: 1px 1px 7px rgb(223, 222, 222); */
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
     opacity: 0;
     pointer-events: none;
 }
@@ -69,6 +71,7 @@ header .profile_container{
 }
 
 .profile-dropdown.show{
+   top: 80px;
    opacity: 1;
    pointer-events: visible;  
 }
