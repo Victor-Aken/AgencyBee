@@ -50,6 +50,10 @@
     margin-top: 3px;
 }
 
+#blue_add_icon{
+    display: none;
+}
+
 
 
 .content_container .add_team_member_btn:hover{
@@ -169,6 +173,9 @@
     outline: none;
     border-radius: 6px;
     border: 1px solid rgb(211, 209, 209);
+    padding-left: 6px;
+    padding-right: 8px;
+    font-size: 14px;
 }
 
 .add_member_form form .select select:focus{

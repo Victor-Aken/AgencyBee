@@ -44,13 +44,13 @@
 }
 
 .unlock_access_button button{
-    background-color: transparent;
-    border: 2px solid #003559;
-    width: 180px;
-    height: 40px;
-    border-radius: 20px;
-    color: #003559;
-    font-size: 16px;
+    background-color: red;
+    border: none;
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    font-size: 24px;
     font-weight: 600;
     transition: all 0.4s ease-in-out;
     padding-left: 14px;
@@ -64,9 +64,9 @@
 
 
 .unlock_access_button .fa-solid{
-    color: #003559;
-    font-size: 18px;
-    margin-right: -40px;
+    color: white;
+    font-size: 30px;
+    margin-right: -60px;
 }
 
 

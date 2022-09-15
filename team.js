@@ -23,3 +23,23 @@ overlay.addEventListener( 'click', (e) => {
         overlay.style.display = "none";
     }
 })
+
+
+// .... Toggle Blue and White Icons On Hover about Add Team Member Buttons .....  //
+teamMemberFormOpenBtn.addEventListener( 'mouseover', () => {
+    let white_add_icon = document.getElementById('white_add_icon');
+    let blue_add_icon = document.getElementById('blue_add_icon');
+
+    white_add_icon.style.display = "none";
+    blue_add_icon.style.display = "block";
+
+})
+
+teamMemberFormOpenBtn.addEventListener( 'mouseleave', () => {
+    let white_add_icon = document.getElementById('white_add_icon');
+    let blue_add_icon = document.getElementById('blue_add_icon');
+
+    white_add_icon.style.display = "block";
+    blue_add_icon.style.display = "none";
+
+})
