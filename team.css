@@ -160,11 +160,123 @@
     border: 1px solid #2e9ce679;
 }
 
-.add_member_form form .select{
+
+/* ... Select Project Styling ...... */
+
+.add_member_form form .select_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
+.add_member_form form .select_container .select_btn_container{
+    height: 40px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 6px;
+    background-color: #e8f0fe;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.project_list{
+    width: 260px;
+    background-color: #e8f0fe;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    transition: all 0.4s ease-in;
+}
+
+.select_btn_container.open ~ .project_list{
+   display: block;
+}
+
+
+.select_btn_arrow{
+    transition: all 0.3s ease-in-out;
+}
+
+.select_btn_container.open .select_btn_arrow{
+    transform: rotate(-180deg);
+}
+
+
+
+.project_list .each_project_item{
+    list-style-type: none;
+    padding:  16px 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+.project_list .each_project_item:hover{
+    background-color: white;
+    border-radius: 8px;
+}
+
+.project_list .each_project_item .check{
+    border: 1px solid #c0c0c0;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.each_project_item.checked .check{
+    border: none;
+    background-color: blue;
+}
+
+.project_list .each_project_item .check .check_icon{
+    font-size: 14px;
+    transform: scale(0);
+}
+
+.each_project_item.checked .check .check_icon{
+    transform: scale(1);
+    color: white;
+}
+
+
+
+.project_list .each_project_item .project_name{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+.add_member_form form .select_container input{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #003559;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* 
 
 .add_member_form form .select select{
     width: 320px;
@@ -181,19 +293,14 @@
 .add_member_form form .select select:focus{
     border: 1px solid #2e9ce679;
 }
+ */
 
 
 
 
-.add_member_form form .select input{
-    width: 140px;
-    height: 40px;
-    border: none;
-    border-radius: 6px;
-    background-color: #003559;
-    color: white;
-    cursor: pointer;
-}
+
+
+
 
 
 /*  ...... Overlay ...... */

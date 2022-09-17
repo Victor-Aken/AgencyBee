@@ -41,9 +41,11 @@
 /* ... Unlock Access Button ..... */
 .unlock_access_button{
     margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.unlock_access_button button{
+.unlock_access_button .button{
     background-color: red;
     border: none;
     width: 280px;
@@ -53,20 +55,24 @@
     font-size: 24px;
     font-weight: 600;
     transition: all 0.4s ease-in-out;
-    padding-left: 14px;
     cursor: pointer;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.unlock_access_button button:hover{
-   padding-left: 30px;
-   padding-right: -8px;
+.unlock_access_button .button p{
+    transition: all 0.4s ease-in-out;
+}
+.unlock_access_button .button p:hover{
+    margin-left: 12px;
 }
 
 
-.unlock_access_button .fa-solid{
-    color: white;
-    font-size: 30px;
-    margin-right: -60px;
+.unlock_access_button .lock_icon img{
+    width: 26px;
+    margin-right: 10px;
 }
 
 

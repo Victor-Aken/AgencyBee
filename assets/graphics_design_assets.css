@@ -4,7 +4,7 @@
 .content_container{
     margin-top: 70px;
     margin-left: 300px;
-    width: calc(100vw - 300px);
+    width: 100vw;
     padding: 30px 60px;
 }
 

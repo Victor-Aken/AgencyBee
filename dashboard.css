@@ -25,8 +25,21 @@ header .logo{
     color: #003559;
     letter-spacing: 1px;
     font-size: 18px;
+    display: flex;
+    align-items: center;
     
 }
+header .logo span{
+   margin-top: 7px;
+   margin-left: 14px;
+   cursor: pointer;
+   display: none;
+   
+}
+header .logo span .hamburger{
+    font-size: 22px;
+}
+
 
 header .profile_container{
     display: flex;
@@ -40,11 +53,11 @@ header .profile_container{
     position: absolute;
     right: 80px;
     top: 50px;
-    width: 320px;
-    height: 450px;
-    border-radius: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
+    width: 260px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
     background-color: white;
     /* box-shadow: 1px 1px 7px rgb(223, 222, 222); */
 
@@ -54,19 +67,24 @@ header .profile_container{
     pointer-events: none;
 }
 
-.profile-dropdown .profile-dropdown-heading{
+.profile-dropdown .profile-dropdown-item{
     display: flex;
-    background-color: #F6F6F8;
-    margin-left: -10px;
-    margin-top: -20px;
-    padding-top: 20px;
-    padding-left: 10px;
-   padding-bottom: 10px;
-    border-radius: 20px 20px 0 0;
+    align-items: center;
+    /* background-color: #F6F6F8; */
+
+    margin-bottom: 26px;
+    text-decoration: none;
+    color: black;
+}
+.profile-dropdown .profile-dropdown-item:hover{
+    color: #003559;
 }
 
-.profile-dropdown .profile-dropdown-heading .profile-icon img{
-    width: 60px;
+
+
+
+.profile-dropdown .profile-dropdown-item .profile-icon .item_icon{
+    font-size: 20px;
     margin-right: 10px;
 }
 
@@ -97,6 +115,8 @@ header .profile_container{
     display: flex;
     flex-direction: column;
     z-index: 1;
+
+    transition: all 0.4s ease-in-out;
 
     /* justify-content: center; */
 }
@@ -261,4 +281,52 @@ header .profile_container{
         grid-template-columns: 1fr;
         gap: 20px;
     }
+}
+
+
+/* ..... Mobile Responsiveness ...... */
+
+@media screen and (max-width: 808px){
+
+
+        
+    /* .....Header Section...... */
+    header{
+        padding-left: 20px;
+    }
+
+        
+    header .logo span{
+        display: block; 
+    }
+
+        
+    header .profile_container{
+        padding-right: 50px;
+    }
+
+
+    header .profile_container .my_account_text{
+        display: none;
+    }
+
+
+
+    .side_bar{
+        left: -100%;
+    }
+
+    .side_bar.active{
+       left: 0;
+    }
+
+        
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 50px 50px;
+    }
+
 }

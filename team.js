@@ -43,3 +43,31 @@ teamMemberFormOpenBtn.addEventListener( 'mouseleave', () => {
     blue_add_icon.style.display = "none";
 
 })
+
+
+
+
+// ..... SELECT PROJECT OPEN ....... //
+let selectBtn = document.getElementById('select_btn_container');
+let projects = document.querySelectorAll('.each_project_item');
+
+selectBtn.addEventListener( 'click', () =>{
+    selectBtn.classList.toggle('open');
+
+})
+
+projects.forEach( eachProject => {
+    eachProject.addEventListener( 'click', () => {
+        eachProject.classList.toggle('checked');
+
+        let checked = document.querySelectorAll('.checked');
+        let selectBtnText = document.querySelector('.select_btn_text');
+
+        if( checked && checked.length > 0 ){
+            selectBtnText.innerText = `${ checked.length} Selected`;
+        } else{
+            selectBtnText.innerText = "Select Project(s)";
+        }
+    })
+})
+
