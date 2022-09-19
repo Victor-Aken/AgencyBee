@@ -21,7 +21,7 @@ body{
 .form_container{
     background-color: white;
     height: 100vh;
-    width:50vw;
+    width:55vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@ body{
 
 .form_container form input{
     height: 50px;
-    width: 30vw;
+    width: 32vw;
     border: 1px solid #ced4da;
     background-color: #f4f4f5;
     border-radius: 25px;
@@ -113,7 +113,7 @@ body{
 
 
 .side_image{
-    width: 50vw;
+    width: 45vw;
     height: 100vh;
     position: relative;
 }
@@ -134,3 +134,42 @@ body{
     height: 100%;
 }
 
+
+
+
+
+/* .... MEDIA QUERIES ..... */
+
+@media screen and (max-width:999px) {
+
+        
+    .form_container{
+        width:100vw;
+    }
+
+            
+    .form_container form input{
+        height: 50px;
+        width: 56vw;
+    }
+
+
+
+
+    .side_image{
+        display: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width:740px) {
+
+            
+    .form_container form input{
+        height: 50px;
+        width: 70vw;
+    }
+
+}

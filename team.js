@@ -25,7 +25,9 @@ overlay.addEventListener( 'click', (e) => {
 })
 
 
-// .... Toggle Blue and White Icons On Hover about Add Team Member Buttons .....  //
+
+
+// .... Toggle Blue and White plus Icons On Hover about Add Team Member Buttons .....  //
 teamMemberFormOpenBtn.addEventListener( 'mouseover', () => {
     let white_add_icon = document.getElementById('white_add_icon');
     let blue_add_icon = document.getElementById('blue_add_icon');
@@ -71,3 +73,109 @@ projects.forEach( eachProject => {
     })
 })
 
+
+
+
+
+// ..... ADD TEAM MEMBER .... //
+let addTeamMemberButton = document.getElementById('add_member_button');
+let memberFirstname = document.getElementById('member_first_name');
+let memberLastName = document.getElementById('member_last_name');
+let memberEmail =  document.getElementById('member_email');
+let memberPassword = document.getElementById('member_password');
+let teamMembersContainer = document.getElementById('team_members_container');
+
+
+addTeamMemberButton.addEventListener( 'click', () => {
+
+    let newMemberDetails = document.createElement('tr');
+    newMemberDetails.innerHTML =   `<td>September 13, 2022</td>
+                                    <td>${ memberFirstname.value } ${ memberLastName.value }</td>
+                                    <td>${memberEmail.value }</td>
+                                    <td>${ memberPassword.value }</td>
+                                    <td>Active</td>
+                                    <td style="text-align: right;">
+                                    <input type="button" value="Edit">
+                                    <input class="remove_team_member_btn" type="button" value="Remove">
+                                    <input type="button" value="Inactive"></td>`;
+
+    teamMembersContainer.append(newMemberDetails);
+
+})
+
+
+
+// .... REMOVE TEAM MEMBER .... //
+
+let removeTeamMemberBtns = document.querySelectorAll('.remove_team_member_btn');
+let confirmDeletePopUp = document.getElementById('confirm_delete_pop_up');
+let cancelDeletePopUpBtn = document.getElementById('cancel_remove_btn');
+let confirmDeletePopUpBtn = document.getElementById('confirm_remove_btn');
+
+removeTeamMemberBtns.forEach( removeTeamMemberBtn => {
+    removeTeamMemberBtn.addEventListener( 'click', () => {
+        let overlay = document.getElementById('overlay');
+
+        overlay.style.display = "block";
+        confirmDeletePopUp.classList.add('active');
+
+        // ... CONFIRM ROMOVE ... //     
+        confirmDeletePopUpBtn.addEventListener( 'click', () => {
+            let teamMember = removeTeamMemberBtn.parentElement.parentElement;
+            teamMember.remove();
+            confirmDeletePopUp.classList.remove('active');
+            overlay.style.display = "none";
+        })
+
+    })
+})
+
+
+
+
+// ... CANCEL ROMOVE ... //
+cancelDeletePopUpBtn.addEventListener( 'click', () => {
+    confirmDeletePopUp.classList.remove('active');
+    overlay.style.display = "none";
+})
+
+
+
+// ... OVERLAY ... //
+overlay.addEventListener( 'click', (e) => {
+    if( e.target !== confirmDeletePopUp ){
+        confirmDeletePopUp.classList.remove('active');
+        overlay.style.display = "none";
+    }
+})
+
+
+
+
+
+
+
+// .... ACTIVE AND INACTIVE TEAM MEMBER BUTTONS ..... //
+let activateButtons = document.querySelectorAll('.activate_btn');
+let disactivateButtons = document.querySelectorAll('.disactivate_btn');
+
+activateButtons.forEach( activateBtn => {
+    activateBtn.addEventListener( 'click', () =>{
+        let disactivateBtn = activateBtn.parentElement.children[3];
+
+        activateBtn.parentElement.parentElement.children[4].innerText = "Inactive";
+        activateBtn.style.display = "none";
+        disactivateBtn.style.display = "inline";
+    })
+} )
+
+disactivateButtons.forEach( disactivateBtn => {
+    disactivateBtn.addEventListener( 'click', () => {
+        let activateBtn = disactivateBtn.parentElement.children[2];  
+        
+        disactivateBtn.parentElement.parentElement.children[4].innerText = "Active";
+        activateBtn.style.display = "inline";
+        disactivateBtn.style.display = "none";
+
+     })
+})

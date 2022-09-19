@@ -7,6 +7,12 @@ profile.addEventListener( 'click', () => {
     profileDropdown.classList.toggle('show');
 })
 
+window.addEventListener( 'mouseup', (event) => {
+    if(profileDropdown.classList.contains('show') && event.target !== profileDropdown){
+        profileDropdown.classList.remove('show');
+    }
+})
+
 
 
 // ...... HAMBURGER TOGGLE SIDE BAR ..... //

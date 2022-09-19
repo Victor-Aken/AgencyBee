@@ -19,8 +19,7 @@
     align-items: center;
     background-color: #003559;
     border-radius: 20px;
-    padding: 30px;
-    
+    padding: 26px;  
 }
 
 .content_container .video_container iframe{
@@ -133,7 +132,7 @@
     .content_container .video_container{
         width: 500px;
         height: 250px;
-        
+        padding: 20px;
     }
     
     
@@ -150,5 +149,249 @@
     }
     
     
-    
+}
+
+
+
+
+/* ..... Mobile Responsiveness ...... */
+
+@media screen and (max-width: 999px){
+
+
+        
+    /* .....Header Section...... */
+    header{
+        padding-left: 20px;
     }
+
+        
+    header .logo span{
+        display: block; 
+    }
+
+        
+    header .profile_container{
+        padding-right: 60px;
+    }
+
+
+    header .profile_container .my_account_text{
+        display: block;
+    }
+
+    
+        
+    /* ...Profile Dropdown ... */
+    .profile-dropdown{
+        right: 40px;
+    }
+
+
+
+
+    .side_bar{
+        left: -100%;
+    }
+
+    .side_bar.active{
+       left: 0;
+    }
+
+        
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 50px 50px;
+    }
+
+
+
+     
+    .content_container .video_container{
+        width: 600px;
+        height: 350px;
+        padding: 20px;
+    }
+    
+    
+    
+    .content_container .welcome_msg{
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+    
+    
+    .content_container .welcome_msg p{
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 788px){
+
+
+        
+    /* .....Header Section...... */
+        
+    header .logo span{
+        display: block; 
+    }
+
+        
+    header .profile_container{
+        padding-right: 60px;
+    }
+
+
+    header .profile_container .my_account_text{
+        display: block;
+    }
+
+
+
+    .side_bar{
+        left: -100%;
+    }
+
+    .side_bar.active{
+       left: 0;
+    }
+
+        
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 50px 50px;
+    }
+
+
+
+     
+    .content_container .video_container{
+        width: 450px;
+        height: 250px;
+        background-color: #003559;
+        border-radius: 10px;
+        padding: 10px;  
+    }
+    
+    
+    
+    .content_container .welcome_msg{
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+    
+    
+    .content_container .welcome_msg p{
+        font-size: 20px;
+    }
+
+        
+    .unlock_access_button .button{
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 18px;
+    }
+
+        
+    .unlock_access_button .lock_icon img{
+        width: 20px;
+        margin-right: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    
+    header .profile_container .my_account_text{
+        display: none;
+    }
+
+
+    
+      
+    .content_container .video_container{
+        width: 360px;
+        height: 160px;
+        background-color: #003559;
+        border-radius: 10px;
+        padding: 10px;  
+    }
+
+    
+    
+    .content_container .welcome_msg p{
+        font-size: 16px;
+    }
+
+        
+    .unlock_access_button .button{
+        width: 168px;
+        height: 44px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:440px) {
+
+        
+    header .logo{
+        font-size: 14px;
+        
+    }
+         
+    header .profile_container{
+        padding-right: 30px;
+    }
+    
+       
+    .content_container .video_container{
+        width: 240px;
+        height: 100px;
+        background-color: #003559;
+        border-radius: 6px;
+        padding: 6px; 
+        margin-top: -140px; 
+    }
+
+    
+        
+    .unlock_access_button .button{
+        width: 160px;
+        height: 40px;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+
+        
+    .unlock_access_button .lock_icon img{
+        width: 16px;
+        margin-right: 10px;
+    }
+
+    
+    .content_container .welcome_msg p{
+        font-size: 16px;
+        margin-top: -170px;
+    }
+
+}

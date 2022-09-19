@@ -170,6 +170,17 @@ header .profile_container{
 }
 
 
+.support_btn{
+    position: absolute;
+    top: 73%;
+}
+
+.logout_btn{
+    position: absolute;
+    top: 80%;
+}
+
+
 
 
 /* .....Content Section..... */
@@ -177,7 +188,7 @@ header .profile_container{
     margin-top: 70px;
     margin-left: 300px;
     width: calc(100vw - 300px);
-    padding: 50px 50px;
+    padding: 50px 50px 50px 50px;
 }
 
 
@@ -188,7 +199,6 @@ header .profile_container{
     /* grid-template-columns: repeat(3, 340px); */
 
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 30px;
     gap: 30px;
 }
 
@@ -296,6 +306,13 @@ header .profile_container{
     }
 
         
+    header .logo{
+        font-size: 16px;
+        
+    }
+
+
+        
     header .logo span{
         display: block; 
     }
@@ -308,6 +325,13 @@ header .profile_container{
 
     header .profile_container .my_account_text{
         display: none;
+    }
+
+
+        
+    /* ...Profile Dropdown ... */
+    .profile-dropdown{
+        right: 40px;
     }
 
 

@@ -37,17 +37,23 @@
     text-decoration: none;
     background-color: #003559;
     color: white;
-    padding: 10px 20px;
+
+    height: 40px;
+    width: 180px;
+    border: 1px solid #003559;
+
+    /* padding: 10px 20px; */
     border-radius: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .content_container .add_team_member_btn img{
     width: 16px;
     margin-right: 3px;
-    margin-top: 3px;
 }
 
 #blue_add_icon{
@@ -60,8 +66,16 @@
     background-color: white;
     color: #003559;
     border: 1px solid #003559;
-    padding: 9px 19px;
+
+
+    /* padding: 9px 19px; */
 }
+
+.disactivate_btn{
+    display: none;
+}
+
+
 
 
 .content_container .table_container{
@@ -260,7 +274,7 @@
 
 
 
-.add_member_form form .select_container input{
+.add_member_form form .select_container #add_member_button{
     width: 140px;
     height: 40px;
     border: none;
@@ -268,36 +282,80 @@
     background-color: #003559;
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 
 
 
 
+/* ....CONFIRM DELETE POP UP ..... */
+.confirm_delete_team_member_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    padding-top: 60px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 
+    transition: all 0.25s ease-in-out;
+    z-index: 5;
+}
+.confirm_delete_team_member_container.active{
+    transform: translate(-50%, -50%) scale(1);
+}
 
-/* 
+.confirm_delete_team_member_container .exclamation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: red;
 
-.add_member_form form .select select{
-    width: 320px;
+}
+
+.confirm_delete_team_member_container .confirm_question{
+   text-align: center;
+   font-size: 38px;
+   margin-top: 20px;
+}
+
+.confirm_delete_team_member_container .confirm_cancel_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.confirm_cancel_buttons .confirm_remove_btn{
+    width: 140px;
     height: 40px;
-    border: none;
-    outline: none;
     border-radius: 6px;
-    border: 1px solid rgb(211, 209, 209);
-    padding-left: 6px;
-    padding-right: 8px;
-    font-size: 14px;
+    border: none;
+    background-color: #003559;
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
 }
-
-.add_member_form form .select select:focus{
-    border: 1px solid #2e9ce679;
+.confirm_cancel_buttons .cancel_remove_btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
- */
-
-
-
-
 
 
 
