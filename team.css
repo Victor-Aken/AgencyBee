@@ -37,7 +37,7 @@
     text-decoration: none;
     background-color: #003559;
     color: white;
-
+    padding: 0 10px;
     height: 40px;
     width: 180px;
     border: 1px solid #003559;
@@ -54,6 +54,7 @@
 .content_container .add_team_member_btn img{
     width: 16px;
     margin-right: 3px;
+    margin-top: 3px;
 }
 
 #blue_add_icon{

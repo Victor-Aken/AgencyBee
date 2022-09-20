@@ -68,7 +68,7 @@ body{
 }
 
 .form_container form input[type="password"]{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .password_container{
@@ -170,6 +170,23 @@ body{
     .form_container form input{
         height: 50px;
         width: 70vw;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+            
+    .form_container form input{
+        height: 42px;
+        width: 80vw;
+        font-size: 14px;
+    }
+
+    .form_container form input::placeholder{
+        font-size: 14px;
     }
 
 }
