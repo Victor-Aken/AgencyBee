@@ -20,14 +20,17 @@
 
     <!-- ......Header Section....... -->
     <header>
-        <div class="logo"><h1>AgencyBee</h1></div>
+        <div class="logo">
+            <h1>AgencyBee</h1>
+            <span id="hamburger_icon"><i class="fa-solid fa-bars hamburger"></i></span>
+        </div>
         <div class="profile_container" id="profile">
             <div style="margin-right:4px;"><img src="images/icons8-male-user-24 (1).png" alt=""></div>
             <p style="color: #003559;">My Account</p>
         </div>
          <!-- .... PROFILE DROPDOWN ..... -->
          <div class="profile-dropdown" id="profile-dropdown">
-            <a href="" class="profile-dropdown-item">
+            <a href="account.html/profile.html" class="profile-dropdown-item">
                 <div class="profile-icon">
                     <i class="fa-solid fa-circle-user item_icon"></i>
                 </div>
@@ -75,7 +78,7 @@
     <!-- ...Content and Sidebar ..... -->
     <div class="content_sidebar">
         <!-- .......Side Bar ............ -->
-        <div class="side_bar">
+        <div id="side_bar" class="side_bar">
             <div class="side_bar_btn">
                 <a href="home_page.html" style="margin-top: 20px;">
                     <div><img style="width: 22px;" src="images/icons8-home-50.png" alt=""></div>
@@ -118,14 +121,14 @@
                     <p>Whitelabel</p>
                 </a>
             </div>
-            <div class="side_bar_btn" style="margin-top: 150px;">
+            <div class="side_bar_btn support_btn">
                 <a href="">
                     <div><img style="width: 24px;" src="images/icons8-inquiry-24.png" alt=""></div>
                     <p>Support</p>
                 </a>
             </div>
 
-            <div class="side_bar_btn" style="margin-top: 0px;">
+            <div class="side_bar_btn logout_btn">
                 <a href="">
                     <div><img style="width: 24px;" src="images/icons8-logout-48.png" alt=""></div>
                     <p>Logout</p>
@@ -167,24 +170,44 @@
                             <td>akenvictor@gmail.com</td>
                             <td>123456</td>
                             <td>Active</td>
-                            <td style="text-align: right;">
-                                <input type="button" value="Edit">
-                                <input class="remove_team_member_btn" type="button" value="Remove">
-                                <input class="activate_btn" type="button" value="Inactive">
-                                <input class="disactivate_btn" type="button" value="Active">
+                            <td style="text-align: center;" class="action_td">
+                                <button class="action_btn">Actions</button> 
+                                <div class="action_btn_container">
+                                    <button type="button" class="edit_memeber_button">
+                                        <span><i class="fa-solid fa-pen-to-square"></i></span>&nbsp;Edit
+                                    </button>
+                                    <button type="button" class="remove_team_member_btn">
+                                        <span><i class="fa-solid fa-trash-can"></i></i></span>&nbsp;Delete
+                                    </button>
+                                    <button type="button" class="inactive_memeber_button">
+                                        <span><i class="fa-solid fa-location-dot"></i></i></span>&nbsp;Inactive
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td>September 13, 2022</td>
-                            <td>Victor Aken</td>
-                            <td>akenvictor@gmail.com</td>
+                            <td>john Doe</td>
+                            <td>johndoe@gmail.com</td>
                             <td>123456</td>
                             <td>Active</td>
-                            <td style="text-align: right;">
-                                <input  type="button" value="Edit">
-                                <input class="remove_team_member_btn" type="button" value="Remove">
-                                <input class="activate_btn" type="button" value="Inactive">
-                                <input class="disactivate_btn" type="button" value="Active">
+                            <td style="text-align: center;" class="action_td">
+                                <button class="action_btn">Actions</button> 
+                                <div class="action_btn_container">
+                                    <button type="button" class="edit_memeber_button">
+                                        <span><i class="fa-solid fa-pen-to-square"></i></span>&nbsp;Edit
+                                    </button>
+                                    <button type="button" class="remove_team_member_btn">
+                                        <span><i class="fa-solid fa-trash-can"></i></i></span>&nbsp;Delete
+                                    </button>
+                                    <button type="button" class="inactive_memeber_button">
+                                        <span><i class="fa-solid fa-location-dot"></i></i></span>&nbsp;Inactive
+                                    </button>
+
+                                    <!-- <input class="remove_team_member_btn" type="button" value="Remove">
+                                    <input class="activate_btn" type="button" value="Inactive">
+                                    <input class="disactivate_btn" type="button" value="Active"> -->
+                                </div>
                             </td>
                         </tr>
                     </tbody>

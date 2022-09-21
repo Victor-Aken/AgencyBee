@@ -95,3 +95,76 @@
 }
 
 }
+
+
+/* ... MOBILE RESPONSIVENESS ... */
+@media screen and (max-width:808px) {
+    
+        
+    /* .....Header Section...... */
+    header{
+        padding-left: 20px;
+    }
+
+        
+    header .logo{
+        font-size: 16px;
+        
+    }
+
+
+        
+    header .logo span{
+        display: block;
+        
+    }
+
+        
+    header .profile_container{
+        padding-right: 50px;
+    }
+
+
+    header .profile_container .my_account_text{
+        display: none;
+    }
+
+
+        
+    /* ...Profile Dropdown ... */
+    .profile-dropdown{
+        right: 40px;
+    }
+
+
+
+    .side_bar{
+        left: -100%;
+    }
+
+    .side_bar.active{
+       left: 0;
+    }
+
+        
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 30px 30px;
+    }
+
+}
+
+
+@media screen and (max-width:430px) {
+         
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 20px 20px;
+    }
+}

@@ -104,17 +104,141 @@
 
 
 
-.content_container .table_container table input[type="button"]{
-    width: 80px;
-    height: 30px;
+
+/* .... ACTIONS BUTTONS .... */
+.action_td{
+    position: relative;
+}
+
+.action_td .action_btn{
     border: none;
-    border-radius: 20px;
-    background-color: rgb(226, 224, 224);
+     background-color: #003559;
+     color: white;
+     width: 100px;
+     height: 30px;
+     text-transform: uppercase;
+     border-radius: 4px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     cursor: pointer;
+}
+.action_td .action_btn:hover{
+    box-shadow: 0 0 0 0.2rem hsl(208deg 6% 54% / 50%);
+}
+
+
+.action_td .action_btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: -80px;
+    left: 40px;
+    padding: 4px 0;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgb(201, 199, 199);
+    z-index: 5;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+.action_td .action_btn_container.show{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+
+
+/*  ... Edit Member Button ... */
+.edit_memeber_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border: none;
+    background-color: white;
     cursor: pointer;
     font-family: Verdana;
     font-size: 13px;
-    
+    width: 100%;
 }
+
+.edit_memeber_button:hover{
+    background-color: rgb(226, 224, 224);
+}
+
+.edit_container span{
+   
+}
+
+/* .... Delete Member Button .... */
+.remove_team_member_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 13px;
+    width: 100%;
+}
+.remove_team_member_btn:hover{
+    background-color: rgb(226, 224, 224);
+}
+
+/* ...Active Inactive Member Button ... */
+.inactive_memeber_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 13px;
+    width: 100%;
+}
+.inactive_memeber_button:hover{
+    background-color: rgb(226, 224, 224);
+}
+
+
+
+
+
+
+
+.action_td input{
+    border: none;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 13px;
+}
+
+/* 
+
+.content_container .table_container table input[type="button"]{
+    height: 34px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 13px;
+    width: 100%;
+    
+} */
+
+
+/* 
+.content_container .table_container table input[type="button"]:hover{
+    background-color: rgb(226, 224, 224);
+} */
 
 
 /* ..... Add Member Form ..... */

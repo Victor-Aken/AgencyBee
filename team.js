@@ -27,7 +27,7 @@ overlay.addEventListener( 'click', (e) => {
 
 
 
-// .... Toggle Blue and White plus Icons On Hover about Add Team Member Buttons .....  //
+// .... Toggle Blue and White plus Icons On Hover about Add Team Member Button .....  //
 teamMemberFormOpenBtn.addEventListener( 'mouseover', () => {
     let white_add_icon = document.getElementById('white_add_icon');
     let blue_add_icon = document.getElementById('blue_add_icon');
@@ -94,14 +94,43 @@ addTeamMemberButton.addEventListener( 'click', () => {
                                     <td>${memberEmail.value }</td>
                                     <td>${ memberPassword.value }</td>
                                     <td>Active</td>
-                                    <td style="text-align: right;">
-                                    <input type="button" value="Edit">
-                                    <input class="remove_team_member_btn" type="button" value="Remove">
-                                    <input type="button" value="Inactive"></td>`;
+                                    <td style="text-align: center;" class="action_td">
+                                        <button class="action_btn">Actions</button> 
+                                        <div class="action_btn_container">
+                                            <button type="button" class="edit_memeber_button">
+                                                <span><i class="fa-solid fa-pen-to-square"></i></span>&nbsp;Edit
+                                            </button>
+                                            <button type="button" class="remove_team_member_btn">
+                                                <span><i class="fa-solid fa-trash-can"></i></i></span>&nbsp;Delete
+                                            </button>
+                                            <button type="button" class="inactive_memeber_button">
+                                                <span><i class="fa-solid fa-location-dot"></i></i></span>&nbsp;Inactive
+                                            </button>
+                                        </div>
+                                    </td>`
 
     teamMembersContainer.append(newMemberDetails);
 
 })
+
+
+// .... OPEN ACTIONS BUTTONS .... //
+let actionsButtons = document.querySelectorAll('.action_btn');
+actionsButtons.forEach( actionBtn => {
+    actionBtn.addEventListener( 'click', () => {
+        let actionsButtonsContainer = actionBtn.parentElement.children[1];
+        actionsButtonsContainer.classList.add('show');
+
+        window.addEventListener( 'mouseup', (e) => {
+            if( actionsButtonsContainer.classList.contains('show') && e.target !== actionsButtonsContainer ){
+                actionsButtonsContainer.classList.remove('show');
+            }
+        })
+    })
+
+})
+
+
 
 
 
@@ -121,7 +150,7 @@ removeTeamMemberBtns.forEach( removeTeamMemberBtn => {
 
         // ... CONFIRM ROMOVE ... //     
         confirmDeletePopUpBtn.addEventListener( 'click', () => {
-            let teamMember = removeTeamMemberBtn.parentElement.parentElement;
+            let teamMember = removeTeamMemberBtn.parentElement.parentElement.parentElement;
             teamMember.remove();
             confirmDeletePopUp.classList.remove('active');
             overlay.style.display = "none";
@@ -155,27 +184,35 @@ overlay.addEventListener( 'click', (e) => {
 
 
 
+
+
+
+
+
+
 // .... ACTIVE AND INACTIVE TEAM MEMBER BUTTONS ..... //
-let activateButtons = document.querySelectorAll('.activate_btn');
-let disactivateButtons = document.querySelectorAll('.disactivate_btn');
 
-activateButtons.forEach( activateBtn => {
-    activateBtn.addEventListener( 'click', () =>{
-        let disactivateBtn = activateBtn.parentElement.children[3];
 
-        activateBtn.parentElement.parentElement.children[4].innerText = "Inactive";
-        activateBtn.style.display = "none";
-        disactivateBtn.style.display = "inline";
-    })
-} )
+// let activateButtons = document.querySelectorAll('.activate_btn');
+// let disactivateButtons = document.querySelectorAll('.disactivate_btn');
 
-disactivateButtons.forEach( disactivateBtn => {
-    disactivateBtn.addEventListener( 'click', () => {
-        let activateBtn = disactivateBtn.parentElement.children[2];  
+// activateButtons.forEach( activateBtn => {
+//     activateBtn.addEventListener( 'click', () =>{
+//         let disactivateBtn = activateBtn.parentElement.children[3];
+
+//         activateBtn.parentElement.parentElement.children[4].innerText = "Inactive";
+//         activateBtn.style.display = "none";
+//         disactivateBtn.style.display = "inline";
+//     })
+// } )
+
+// disactivateButtons.forEach( disactivateBtn => {
+//     disactivateBtn.addEventListener( 'click', () => {
+//         let activateBtn = disactivateBtn.parentElement.children[2];  
         
-        disactivateBtn.parentElement.parentElement.children[4].innerText = "Active";
-        activateBtn.style.display = "inline";
-        disactivateBtn.style.display = "none";
+//         disactivateBtn.parentElement.parentElement.children[4].innerText = "Active";
+//         activateBtn.style.display = "inline";
+//         disactivateBtn.style.display = "none";
 
-     })
-})
+//      })
+// })

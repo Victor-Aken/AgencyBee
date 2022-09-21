@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copywriting</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="../dashboard.css">
-    <link rel="stylesheet" href="web_dev_assets.css">
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- .... Google Fonts .... -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -26,11 +28,12 @@
         </div>
         <div class="profile_container" id="profile">
             <div style="margin-right:4px;"><img src="../images/icons8-male-user-24 (1).png" alt=""></div>
-            <p style="color: #003559;" class="my_account_text">My Account</p>
+            <p class="my_account_text" style="color: #003559;">My Account</p>
         </div>
-         <!-- .... PROFILE DROPDOWN ..... -->
-         <div class="profile-dropdown" id="profile-dropdown">
-            <a href="../account.html/profile.html" class="profile-dropdown-item">
+
+        <!-- .... PROFILE DROPDOWN ..... -->
+        <div class="profile-dropdown" id="profile-dropdown">
+            <a href="" class="profile-dropdown-item">
                 <div class="profile-icon">
                     <i class="fa-solid fa-circle-user item_icon"></i>
                 </div>
@@ -85,9 +88,9 @@
                     <p>Home</p>
                 </a>
             </div>
-            <div class="side_bar_btn_asset">
+            <div class="side_bar_btn">
                 <a href="../dashboard.html">
-                    <div><img src="../images/icons8-asset-64 (1).png" alt=""></div>
+                    <div><img src="../images/icons8-asset-64.png" alt=""></div>
                     <p>Assets</p>
                 </a>
             </div>
@@ -136,65 +139,66 @@
             </div>
         </div>
 
-
-
-        <!-- ......Content Section ...... -->
+        <!-- ......Content Section ....... -->
         <div class="content_container">
-            <div class="cards_container">
-                <div class="card">
-                    <div>
-                        <h2>Website Preview</h2>
-                        <p>Professionally done for you agency website.</p>
+           <div class="profile_page_content_container">
+                <h2>Profile</h2>
+                <form action="">
+                    <div class="profle_image">
+                        <i class="fa-solid fa-circle-user"></i>
                     </div>
-                    <button>Click Here</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <h2>Proposal Presentation</h2>
-                        <p>High converting presentation slides, content and designs.</p>
-                    </div>
-                    <button>Download</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <h2>Email Swipes</h2>
-                        <p>Proven cold email outreach sequence.</p>
-                    </div>
-                    <button>Download</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <h2>Telemarketing Scripts</h2>
-                        <p>Designed to sell telemarketing scripts.</p>
-                    </div>
-                    <button>Download</button>
-                </div>
 
-                <div class="card">
-                    <div>
-                        <h2>Branding Graphics</h2>
-                        <p>Stunning print graphics pack(Letterhead, brochure, receipt, biz cards, etc.)</p>
+                    <div class="user_profile_details">
+                        <div class="username_container">
+                            <p class="username_heading">User Name</p>
+                            <p class="username">John</p>
+                            <div class="user_firstname_input">
+                                <p>First Name</p>
+                                <input type="text" value="John">
+                            </div>
+                        </div>
+                        
+                        <div class="user_email_container">
+                            <p class="user_email_heading">Email Address</p>
+                            <p class="user_email">johndoe@gmail.com</p>
+                            <div class="user_lastname_input">
+                                <p>Last Name</p>
+                                <input type="text" value="Doe">
+                            </div>
+                        </div>
                     </div>
-                    <button>Download</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <h2>Ad Creatives</h2>
-                        <p>Creative ad banner designs</p>
+
+
+                    <div class="change_password_section">
+                        <div class="change_password_heading">
+                            <p>Change Password</p>
+                            <div id="toggle_button" class="toggle_button">
+                                <div class="slider"></div>
+                            </div>
+                        </div>
+
+                        <div class="change_password_container" id="change_password_container">
+                            <div class="new_password">
+                                <p>New Password</p>
+                                <input type="password" name="">
+                            </div>
+                            <div class="confirm_password">
+                                <p>Confirm Password</p>
+                                <input type="password" name="">
+                            </div>
+                        </div>
                     </div>
-                    <button>Download</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <h2>Contract Template </h2>
-                        <p> Attorney-drawn contract and agreement template.</p>
+
+                    <div class="update_profile_btn">
+                        <input type="submit" value="Update Profile">
                     </div>
-                    <button>Download</button>
-                </div>
-            </div>
+                </form>
+           </div> 
         </div>
+
     </div>
     
 <script src="../dashboard.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>

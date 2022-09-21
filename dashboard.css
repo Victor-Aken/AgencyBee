@@ -43,7 +43,7 @@ header .logo span .hamburger{
 header .profile_container{
     display: flex;
     align-items: center;
-    padding-right: 90px;
+    padding-right: 60px;
     cursor: pointer;
 }
 
@@ -58,8 +58,6 @@ header .profile_container{
     padding-left: 30px;
     padding-bottom: 20px;
     background-color: white;
-    /* box-shadow: 1px 1px 7px rgb(223, 222, 222); */
-
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease-in-out;
     opacity: 0;
@@ -69,14 +67,13 @@ header .profile_container{
 .profile-dropdown .profile-dropdown-item{
     display: flex;
     align-items: center;
-    /* background-color: #F6F6F8; */
-
     margin-bottom: 26px;
     text-decoration: none;
     color: black;
+
 }
 .profile-dropdown .profile-dropdown-item:hover{
-    color: #003559;
+    color:  #003559;
 }
 
 
@@ -350,7 +347,7 @@ header .profile_container{
         margin-top: 70px;
         margin-left: 0px;
         width: 100vw;
-        padding: 50px 50px;
+        padding: 30px 30px;
     }
 
 }
