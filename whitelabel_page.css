@@ -173,6 +173,17 @@
         padding: 18px 18px;
     }
 
+    
+        
+    .content_container .cards_container .card{
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-top: 24px;
+        padding-right: 20px;
+        padding-bottom: 24px;
+    }
+
+
 
         
     .content_container .cards_container .card button{

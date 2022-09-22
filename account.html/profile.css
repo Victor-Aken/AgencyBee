@@ -37,6 +37,7 @@
 }
 
 
+
 .user_profile_details .username_container .user_firstname_input{
     margin-top: 30px;
 }
@@ -104,6 +105,7 @@
     font-size: 24px;
     margin-right: 10px;
 }
+
 
 .change_password_section .toggle_button{
     width: 50px;
@@ -202,8 +204,20 @@
 
 /* ... MEDIA QUERIES ... */
 @media screen and (max-width:430px) {
+           
+    /* .....Content Section..... */
+    .content_container{
+        margin-top: 70px;
+        margin-left: 0px;
+        width: 100vw;
+        padding: 18px 18px;
+    }
         
         
+    .user_profile_details{
+        column-gap: 35px;
+    }
+            
     .user_profile_details .username_container .username_heading{
         font-size: 18px;
     }
@@ -244,6 +258,12 @@
 
 
     /* ..... CHANGE PASSWORD SECTION ...... */
+
+
+    .change_password_container{
+        column-gap: 35px;
+    }
+    
 
     .change_password_section .change_password_heading p{
         font-size: 18px;
