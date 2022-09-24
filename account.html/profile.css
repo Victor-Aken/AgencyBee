@@ -203,6 +203,81 @@
 
 
 /* ... MEDIA QUERIES ... */
+@media screen and (max-width:1130px) {
+        
+    .user_profile_details .username_container .user_firstname_input input{
+        width: 22vw;
+        height: 46px;
+        background-color: rgb(235, 234, 234);
+        border-radius: 4px; 
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+        
+    .user_profile_details .user_email_container .user_lastname_input input{
+        width: 22vw;
+        height: 46px;
+        font-size: 16px;
+    }
+
+
+        
+    .change_password_container .new_password input{
+        width: 22vw;
+        height: 46px;
+        font-size: 16px;
+    }
+
+
+            
+    .change_password_container .confirm_password input{
+        width: 22vw;
+        height: 46px;
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media screen and (max-width:808px) {
+
+
+        
+
+    .user_profile_details{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+         
+    .user_profile_details .username_container .user_firstname_input input{
+        width: 35vw;
+    }
+
+        
+    .user_profile_details .user_email_container .user_lastname_input input{
+        width: 35vw;
+    }
+
+
+        
+    .change_password_container .new_password input{
+        width: 35vw;
+    }
+
+
+            
+    .change_password_container .confirm_password input{
+        width: 35vw;
+    }
+}
+
+
+
+
 @media screen and (max-width:430px) {
            
     /* .....Content Section..... */
