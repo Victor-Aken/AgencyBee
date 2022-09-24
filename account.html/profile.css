@@ -294,7 +294,7 @@
     }
 
     .user_profile_details .username_container{
-        margin-right: 30px;
+        margin-right: 50px;
     }
             
     .user_profile_details .username_container .username_heading{
@@ -352,7 +352,7 @@
     }
 
     .change_password_container .new_password{
-        margin-right: 30px;
+        margin-right: 50px;
     }
 
     .change_password_section .toggle_button{
