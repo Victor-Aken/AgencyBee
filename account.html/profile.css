@@ -308,8 +308,9 @@
         margin-bottom: 8px;
     }
     .user_profile_details .username_container .user_firstname_input input{
-        height: 40px;
+        height: 30px;
         font-size: 14px;
+        width: 30vw;
     }
 
 
@@ -327,8 +328,9 @@
     }
 
     .user_profile_details .user_email_container .user_lastname_input input{
-        height: 40px;
+        height: 30px;
         font-size: 14px;
+        width: 30vw;
     }
 
 
@@ -370,16 +372,18 @@
         font-size: 18px;
     }
     .change_password_container .new_password input{
-        height: 40px;
+        height: 30px;
         font-size: 14px;
+        width: 30vw;
     }
 
     .change_password_container .confirm_password p{
         font-size: 18px;
     }
     .change_password_container .confirm_password input{
-        height: 40px;
+        height: 30px;
         font-size: 14px;
+        width: 30vw;
     }
 
     .update_profile_btn input{
