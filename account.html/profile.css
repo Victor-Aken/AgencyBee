@@ -290,7 +290,11 @@
         
         
     .user_profile_details{
-        column-gap: 35px;
+        column-gap: 0px;
+    }
+
+    .user_profile_details .username_container{
+        margin-right: 30px;
     }
             
     .user_profile_details .username_container .username_heading{
@@ -338,13 +342,17 @@
 
 
     .change_password_container{
-        column-gap: 35px;
+        column-gap: 0px;
     }
     
 
     .change_password_section .change_password_heading p{
         font-size: 18px;
         margin-right: 10px;
+    }
+
+    .change_password_container .new_password{
+        margin-right: 30px;
     }
 
     .change_password_section .toggle_button{
