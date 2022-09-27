@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- .......Custom Css .......... -->
+    <title>Lead Finder</title>
     <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="lead_finder.css">
 
-    <!-- .....Google fonts link ..... -->
+    <!-- .... Google Fonts .... -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!--  ....Google Font CDN .... -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--  ....Google Font CDN .... -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -30,6 +30,7 @@
             <div style="margin-right:4px;"><img src="images/icons8-male-user-24 (1).png" alt=""></div>
             <p class="my_account_text" style="color: #003559;">My Account</p>
         </div>
+
         <!-- .... PROFILE DROPDOWN ..... -->
         <div class="profile-dropdown" id="profile-dropdown">
             <a href="account.html/profile.html" class="profile-dropdown-item">
@@ -81,15 +82,15 @@
     <div class="content_sidebar">
         <!-- .......Side Bar ............ -->
         <div class="side_bar" id="side_bar">
-            <div class="side_bar_btn_asset">
-                <a href="" style="margin-top: 20px;">
-                    <div><img style="width: 22px;" src="images/icons8-home-50 (1).png" alt=""></div>
+            <div class="side_bar_btn">
+                <a href="home_page.html" style="margin-top: 20px;">
+                    <div><img style="width: 22px;" src="images/icons8-home-50.png" alt=""></div>
                     <p>Home</p>
                 </a>
             </div>
             <div class="side_bar_btn">
                 <a href="dashboard.html">
-                    <div><img src="images/icons8-asset-64 (2).png" alt=""></div>
+                    <div><img src="images/icons8-asset-64.png" alt=""></div>
                     <p>Assets</p>
                 </a>
             </div>
@@ -99,9 +100,9 @@
                     <p>Form</p>
                 </a>
             </div>
-            <div class="side_bar_btn">
+            <div class="side_bar_btn_leadFinder">
                 <a href="lead_finder.html">
-                    <div><img src="images/icons8-find-user-male-30.png" alt=""></div>
+                    <div><img src="images/icons8-find-user-male-30 (1).png" alt=""></div>
                     <p>Lead Finder</p>
                 </a>
             </div>
@@ -111,7 +112,6 @@
                     <p>Video Kit</p>
                 </a>
             </div>
-            
             <div class="side_bar_btn">
                 <a href="reseller_page.html">
                     <div><img style="width: 24px;" src="images/icons8-credit-card-50.png" alt=""></div>
@@ -139,26 +139,27 @@
             </div>
         </div>
 
-
-
         <!-- ......Content Section ....... -->
         <div class="content_container">
-            <div class="welcome_msg">
-                <p>Welcome <span>Victor,</span> watch the video below to get started!</p>
+            <div class="top_container">
+                <p class="top_left">Find active Leads on our robust Lead Finder...</p>
+                <div class="top_right">
+                    <div>
+                        <input type="text" placeholder="Radius">
+                    </div>
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i>&nbsp; Search</button>
+                </div>
             </div>
-            <!-- Video Container -->
-            <div class="video_container">  
-                <iframe src="https://www.youtube.com/embed/0BIaDVnYp2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="unlock_access_button">
-                <a href="" class="button">
-                    <div class="lock_icon"><img src="images/icons8-unlock-64.png" alt=""></div>
-                    <p>Unlock Access</p>
-                </a>
-            </div>
-        </div>
-    
 
+            <div class="input_section">
+                <input type="text" placeholder="Enter keyword ">
+                <input type="text" placeholder="Enter Location">
+            </div>
+
+            <div class="google_map_container"><img src="images/googleMap.png" alt=""></div>
+        </div>
+    </div>
+    
 <script src="dashboard.js"></script>
 </body>
 </html>
