@@ -63,9 +63,11 @@
     justify-content: center;
 }
 
+
 .unlock_access_button .button p{
     transition: all 0.4s ease-in-out;
 }
+
 .unlock_access_button .button p:hover{
     margin-left: 12px;
 }
