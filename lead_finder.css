@@ -173,8 +173,15 @@ body{
 }
 
 
-/* ..... Mobile Responsiveness ...... */
 @media screen and (max-width: 1080px){
+    .search_results_cards_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ..... Mobile Responsiveness ...... */
+@media screen and (max-width: 1012px){
 
 
         
@@ -230,6 +237,10 @@ body{
         margin-left: 0px;
         width: 100vw;
         padding: 30px 30px;
+    }
+
+    .search_results_cards_container{
+        grid-template-columns: 1fr 1fr;
     }
 
 }
