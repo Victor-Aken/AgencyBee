@@ -1,3 +1,6 @@
+body{
+    font-family: 'roboto', sans-serif;
+}
 
 .side_bar .side_bar_btn_leadFinder a{
     display: flex;
@@ -104,7 +107,7 @@
 .search_results_cards_container .search_result_card{
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    padding: 30px 30PX 20PX 30PX;
+    padding: 30px 16px;
     border-radius: 8px;
 }
 
@@ -127,12 +130,27 @@
     margin-right: 20px;
 }
 
+.search_results_cards_container .search_result_card .info p:nth-child(2){
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 200px;
+    height: fit-content;
+    word-wrap: break-word;
+    font-size: 15px;
+}
 
+.search_results_cards_container .search_result_card .info p:nth-child(2) a{
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 200px;
+    height: fit-content;
+    word-wrap: break-word;
+}
 
 
 
 /* ......  MEDIA QUERIES ...... */
-@media screen and (max-width:1325px){
+@media screen and (max-width:1370px){
     .search_results_cards_container{
         grid-template-columns: 1fr 1fr;
     }
@@ -219,7 +237,7 @@
 
 
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:746px) {
     
     header .profile_container .my_account_text{
         display: none;
