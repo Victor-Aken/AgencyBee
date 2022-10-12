@@ -106,7 +106,7 @@ body{
 
 .search_results_cards_container .search_result_card{
     background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 10, 0.2);
     padding: 30px 16px;
     border-radius: 8px;
 }
