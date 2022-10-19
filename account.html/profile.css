@@ -3,6 +3,7 @@
 /* .... PROFILE PAGE STYLING .... */
 
 .content_container{
+    padding-top: 20px;
 }
 
 .content_container .profile_page_content_container{
@@ -16,7 +17,7 @@
 .content_container .profile_page_content_container .profle_image{
     color: rgb(196, 194, 194);
     font-size: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 

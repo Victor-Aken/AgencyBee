@@ -8,6 +8,11 @@ body{
     background-color: white;
 }
 
+p{
+    margin-bottom: 0 !important;
+}
+
+
 /* .....Header Section...... */
 header{
     display: flex;
@@ -29,6 +34,11 @@ header .logo{
     align-items: center;
     
 }
+
+header .logo h1{
+    font-weight: 700;
+}
+
 header .logo span{
    margin-left: 14px;
    cursor: pointer;
@@ -43,14 +53,14 @@ header .logo span .hamburger{
 header .profile_container{
     display: flex;
     align-items: center;
-    padding-right: 60px;
+    padding-right: 40px;
     cursor: pointer;
 }
 
 /* ...Profile Dropdown ... */
 .profile-dropdown{
     position: absolute;
-    right: 80px;
+    right: 60px;
     top: 50px;
     width: 260px;
     border-radius: 10px;
@@ -84,6 +94,10 @@ header .profile_container{
     margin-right: 10px;
 }
 
+.profile-dropdown .profile-dropdown-item .profile-details p{
+    margin-top: 0;
+}
+
 .profile-dropdown.show{
    top: 80px;
    opacity: 1;
@@ -113,10 +127,7 @@ header .profile_container{
     z-index: 1;
 
     transition: all 0.4s ease-in-out;
-
-    /* justify-content: center; */
 }
-
 .side_bar .side_bar_btn_asset a{
     display: flex;
     align-items: center;
@@ -124,7 +135,7 @@ header .profile_container{
     color: white;
     background-color: #003559;
     height: 50px;
-    width: 210px;
+    width: 240px;
     margin-top: 20px;
     margin-left: 30px;
     border-radius: 25px;
@@ -146,7 +157,7 @@ header .profile_container{
     color: #003559;
     background-color: #F6F6F8;
     height: 50px;
-    width: 210px;
+    width: 240px;
     margin-top: 10px;
     margin-left: 30px;
     border-radius: 25px;
@@ -157,7 +168,8 @@ header .profile_container{
 
 .side_bar .side_bar_btn a:hover{
     background-color: #2e9ce679;
-    padding-left: 40px;
+    padding-left: 45px;
+    width: 250px;
 }
 
 .side_bar .side_bar_btn a img{
@@ -257,6 +269,7 @@ header .profile_container{
 .card h2{
     color: #003559;
     margin-top: 24px;
+    font-size: 26px;
 }
 
 .card p{
