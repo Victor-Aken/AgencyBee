@@ -329,7 +329,7 @@ header .profile_container{
 
         
     header .profile_container{
-        padding-right: 50px;
+        padding-right: 25px;
     }
 
 
@@ -341,7 +341,7 @@ header .profile_container{
         
     /* ...Profile Dropdown ... */
     .profile-dropdown{
-        right: 40px;
+        right: 25px;
     }
 
 
@@ -360,7 +360,7 @@ header .profile_container{
         margin-top: 70px;
         margin-left: 0px;
         width: 100vw;
-        padding: 30px 30px;
+        padding: 20px 30px;
     }
 
 }

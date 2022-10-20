@@ -1,0 +1,22 @@
+
+
+
+/* .... Form Button */
+.side_bar .side_bar_btn_form a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #003559;
+    height: 50px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-left: 30px;
+}
+
+.side_bar .side_bar_btn_form a img{
+    width: 28px;
+    margin-right: 10px;
+}
