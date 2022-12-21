@@ -1,0 +1,46 @@
+
+
+
+/* .... Form Button */
+.side_bar .side_bar_btn_form a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #003559;
+    height: 50px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding-left: 30px;
+}
+
+.side_bar .side_bar_btn_form a img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+
+.create_container{
+    border: 1px solid rgba(0,0,0,.125);
+    min-height: 500px;
+    padding: 30px;
+}
+
+.buttons_container{
+    margin-top: 15px;
+}
+
+.buttons_container button{
+    margin-right: 10px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 4px;
+}
+
+.buttons_container button:hover{
+    box-shadow: 0 0 0 0.2rem hsl(208deg 6% 54% / 50%);
+}
