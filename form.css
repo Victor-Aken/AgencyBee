@@ -126,29 +126,6 @@
 }
 
 
-/* .... Delete Campaign Button .... */
-
-
-/* 
-
-.remove_campaign_btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 34px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    font-family: Verdana;
-    font-size: 13px;
-    width: 100%;
-}
-.remove_campaign_btn:hover{
-    background-color: rgb(226, 224, 224);
-    color: #0d6efd;
-}
- */
-
 
 
 

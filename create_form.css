@@ -44,3 +44,29 @@
 .buttons_container button:hover{
     box-shadow: 0 0 0 0.2rem hsl(208deg 6% 54% / 50%);
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1180px){
+    
+    .buttons_container{
+    }
+    .buttons_container button{
+       font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 1120px){
+    
+    .buttons_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .buttons_container button{
+        margin-top: 8px;
+    }
+}
