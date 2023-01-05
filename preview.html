@@ -1,0 +1,1424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- .... Google Fonts .... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+     <!--  ....Google Font CDN .... -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+     
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/sdrdis/jquery.flowchart/master/jquery.flowchart.min.css">
+
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+ <link rel="stylesheet" href="https://agency.eazyleadz.io/assets/css/dashboard.css">
+<link rel="stylesheet" href="https://agency.eazyleadz.io/assets/css/form.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<script src="https://cdn.tiny.cloud/1/b16qf2gqlu0eeqkyqjkkc0n5kyuzguj71q8gc8ar78n5myd3/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<style>
+    #example {
+  border: 1px solid #BBB;
+  margin-bottom: 10px;
+  position: relative;
+  width: 900px;
+  min-height: 400px;
+  background: white;
+  overflow:auto
+}
+
+.draggable_operators_label {
+  margin-bottom: 5px;
+}
+
+.draggable_operators_divs {
+  margin-bottom: 20px;
+}
+
+.draggable_operator {
+  display: inline-block;
+  padding: 2px 5px 2px 5px;
+  border: 1px solid #ccc;
+  cursor: grab;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tox-statusbar__branding{
+  display: none;
+}
+.image-video, .button, .bottom-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFFC;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.category-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.category-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-content .cart-tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: #DFDFFC;
+    border-radius: 5px;
+    /* margin-bottom: 1rem; */
+}
+.category-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-content .cart-tags div {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.category-content .cart-tags div:hover, .cart-tags-active {
+    background: #5D5FEF!important;
+    color: white!important;
+}
+.category-content .search-wrapper input {
+    border: none;
+    font-size: 13px;
+    padding: 7px 0.5rem;
+    outline: none;
+    width: 95%;
+}
+
+.category-content .search-wrapper {
+    width: 90%;
+    margin: 40px auto;
+    border: 1px solid #DFDFFC;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+.category-content .search-wrapper input {
+    border: none;
+    font-size: 13px;
+    padding: 7px 0.5rem;
+    outline: none;
+    width: 95%;
+}
+
+.image-video, .button, .bottom-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFFC;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.category-content button {
+    margin: 1rem
+rem
+ 0;
+    width: 25%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    background: #5D5FEF;
+}
+.category-content .preset-height-2 {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+.left-content p {
+    color: #25282B;
+    font-weight: 500;
+}
+.button_text {
+    width: 12rem;
+    height: 3rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+.right-content .content {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.right-content .content p {
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+.right-content button, .right-content .content a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.right-content button {
+    background: #5D5FEF;
+}
+
+.add-question {
+    display: flex;
+    align-items: center;
+}
+.add-question img {
+    margin-right: 10px;
+    width: 20px;
+    object-fit: scale-down;
+}
+.add-question p {
+    font-size: 12px;
+    color: #5D5FEF;
+}
+
+.flowchart-operator:hover {
+        border-color: rgb(255, 238, 0) !important;
+}
+
+.flowchart-operator-connector:hover .flowchart-operator-connector-arrow {
+        border-left: 10px solid rgb(105, 255, 5);
+}
+
+
+/*......... ADDED STYLING ........ */
+.flowchart-example-container{
+    width: 80% !important;
+}
+
+.flowchart-example-container .flowchart-operator .flowchart-operator-title{
+    background-color: #003559;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+/* Image Section Styling */
+
+.category-content{
+    border: 1px solid #DFDFFC;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.search-wrapper img{
+    width: 20px;
+}
+
+.search-wrapper input{
+    font-size: 16px !important;
+}
+
+
+.default_imgs_container{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    height: 300px !important;
+    gap: 10px;
+    overflow: auto;
+    padding:20px 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.default_imgs_container .default-imgs img{
+    border-radius: 20px !important;
+    height: 232px !important;
+}
+
+
+
+
+/* Operator buttons */
+
+.create_question_operator, .create_leads_operator, .delete_selected_button, .get_data{
+    margin-right: 10px;
+    border: none;
+    background-color: #003559;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 4px;
+}
+
+.create_question_operator:hover, .create_leads_operator:hover, .delete_selected_button:hover, .get_data:hover{
+    box-shadow: 0 0 0 0.2rem hsl(208deg 6% 54% / 50%);
+}
+
+
+@media screen and (max-width: 1180px){
+    .flowchart-example-container{
+        width: 100% !important;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 1120px){
+    
+
+    .create_question_operator, .create_leads_operator, .delete_selected_button, .get_data{
+        margin-top: 8px;
+    }
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <!-- ......Header Section....... -->
+    <header>
+        <div class="logo">
+            <h1>AgencyBee</h1>
+            <span id="hamburger_icon"><i class="fa-solid fa-bars hamburger"></i></span>
+        </div>
+        <div class="profile_container" id="profile">
+            <div style="margin-right:4px;"><img src="images/icons8-male-user-24 (1).png" alt=""></div>
+            <p class="my_account_text" style="color: #003559;">My Account</p>
+        </div>
+
+        <!-- .... PROFILE DROPDOWN ..... -->
+        <div class="profile-dropdown" id="profile-dropdown">
+            <a href="#" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-circle-user item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>My Profile</p>
+                </div>
+            </a>
+            <a href="#" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-lock item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Change Password</p>
+                </div>
+            </a>
+            <a href="#" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-trophy item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Bonuses</p>
+                </div>
+            </a>
+                        <a href="#" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-sharp fa-solid fa-circle-question item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Support & Help</p>
+                </div>
+            </a>
+
+            <a href="https://agency.eazyleadz.io/logout" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-right-from-bracket item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Logout</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+       <!-- ...Content and Sidebar ..... -->
+<div class="content_sidebar">
+    <!-- .......Side Bar ............ -->
+    <div class="side_bar" id="side_bar">
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io" style="margin-top: 20px;">
+                <div><img style="width: 22px;" src="images/icons8-home-50.png" alt=""></div>
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io/asset">
+                <div><img src="images/icons8-asset-64.png" alt=""></div>
+                <p>Assets</p>
+            </a>
+        </div>
+        <div class="side_bar_btn_asset">
+            <a href="https://agency.eazyleadz.io/create_form">
+                <div><img src="images/icons8-form-24 (1).png" alt=""></div>
+                <p>Form</p>
+            </a>
+        </div>
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io/leads_finder">
+                <div><img src="images/icons8-find-user-male-30.png" alt=""></div>
+                <p>Lead Finder</p>
+            </a>
+        </div>
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io/videokit">
+                <div><img style="width: 24px;" src="images/icons8-laptop-play-video-48.png" alt=""></div>
+                <p>Video Kit</p>
+            </a>
+        </div>
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io/reseller">
+                <div><img style="width: 24px;" src="images/icons8-credit-card-50.png" alt=""></div>
+                <p>Reseller</p>
+            </a>
+        </div>
+        <div class="side_bar_btn">
+            <a href="https://agency.eazyleadz.io/whitelabel">
+                <div><img style="width: 24px;" src="images/icons8-add-bookmark-50.png" alt=""></div>
+                <p>Whitelabel</p>
+            </a>
+        </div>
+        <div class="side_bar_btn support_btn">
+            <a href="">
+                <div><img style="width: 24px;" src="https://agency.eazyleadz.io/assets/images/icons8-inquiry-24.png" alt=""></div>
+                <p>Support</p>
+            </a>
+        </div>
+
+        <div class="side_bar_btn logout_btn">
+            <a href="https://agency.eazyleadz.io/logout">
+                <div><img style="width: 24px;" src="https://agency.eazyleadz.io/assets/images/icons8-logout-48.png" alt=""></div>
+                <p>Logout</p>
+            </a>
+        </div>
+    </div>
+
+        <!-- ......Content Section ....... -->
+<div class="content_container" id="app">
+    <input type="hidden" name="_token" value="Yux6S5xHNeTrYZrAHe5mM7UoAPwtcQifILn8u0DF">        <!-- ......... Top Three Cards .............. -->
+    <div class="top_cards_container">  </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" data-bs-backdrop="static" id="startModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5>Form Title </h5>
+                                <textarea id="start_textarea"></textarea>
+                                <div class="image-video" style="margin-top: 1.5rem;">
+                                    <p>Add Image</p> 
+                                    <div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="start_result.add_image_is_set">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4" v-show="start_result.add_image_is_set">
+                                    <div class="sub-cart">
+                                        <div class="category-heading">
+                                            <p>Add Image</p>
+                                            <span>
+                                                <span>
+                                                    <svg class="svg-inline--fa fa-chevron-down fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                        <path
+                                                            fill="currentColor"
+                                                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                                        ></path>
+                                                    </svg>
+                                                    <!-- <i class="fas fa-chevron-down"></i> Font Awesome fontawesome.com -->
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="category-content">
+                                            <div class="cart-tags">
+                                                <div class="cart-tags-active first-tag" style="border-radius: 5px 0 0 5px;">Pixabay</div>
+                                                <div class="last-tag">Upload</div>
+                                            </div>
+                                            <div class="search-wrapper">
+                                                <img src="images/icons8-search-30.png" alt="spy glass icon" />
+                                                <input type="text" v-model="imageQuery" v-on:keyup.enter="getPixabayImages()"/>
+                                            </div>
+                                            <div class="default_imgs_container">
+                                                <div class="default-imgs" v-for="(pixaBayImage, index) in pixaBayImages">
+                                                    <div style="cursor: pointer">
+                                                    <img :src="pixaBayImage.webformatURL" alt="Image" draggable="false" @click="saveStartImage(index)" alt="..." class="img-thumbnail">
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <button @click="getPixabayImages()" style="border: none;">
+                                                Load more
+                                            </button>
+                                            <!---->
+                                            <!---->
+                                        </div>
+                    
+                                    </div>
+            
+                                </div>
+                                <div class="image-video" style="margin-top: 1.5rem;">
+                                    <p>Button</p> 
+                                    <div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="start_result.show_button_is_set">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4" v-show="start_result.show_button_is_set">
+                                    <div class="sub-cart">
+                                        <div class="category-heading">
+                                            <p>Button Text</p> 
+                                            <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="start_result.button_text">
+                                        </div>                 
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-4" style=" background-color: #f9f9f9; border-radius: 10px;padding: 1.5rem;">
+                                <h5>Form Preview</h5>
+                                <div>
+                                    {{start_result.form_title}}
+                                <div>
+                                </div>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">  
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Edit Result </h5>
+                            <div class="image-video" style="margin-top: 1.5rem;">
+                                <p>Show Heading</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="end_result.show_heading_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4" v-show="end_result.show_heading_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">    
+                                        <textarea id="end_textarea">Hello, World!</textarea>
+                                    </div>             
+                                </div>        
+                            </div>
+              
+
+                            <div class="image-video" style="margin-top: 1.5rem;">
+                                <p>Add Image</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="end_result.add_image_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4"  v-show="end_result.add_image_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        <p>Add Image</p>
+                                        <span>
+                                            <span>
+                                                <svg class="svg-inline--fa fa-chevron-down fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                    <path
+                                                        fill="currentColor"
+                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                                    ></path>
+                                                </svg>
+                                                <!-- <i class="fas fa-chevron-down"></i> Font Awesome fontawesome.com -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="category-content">
+                                        <div class="cart-tags">
+                                            <div class="cart-tags-active first-tag" style="border-radius: 5px 0 0 5px;">Pixabay</div>
+                                            <div class="last-tag">Upload</div>
+                                        </div>
+                                        <div class="search-wrapper">
+                                            <img src="images/icons8-search-30.png" alt="spy glass icon" />
+                                            <input type="text" v-model="imageQuery" v-on:keyup.enter="getPixabayImages()"/>
+                                        </div>
+                                        <div class="default_imgs_container">
+                                            <div class="default-imgs" v-for="(pixaBayImage, index) in pixaBayImages">
+                                                <div style="cursor: pointer">
+                                                    <img :src="pixaBayImage.webformatURL" alt="Image" draggable="false" @click="saveEndImage(index)" alt="..." class="img-thumbnail">
+                                                </div>                      
+                                            </div>
+                                        </div>
+
+                                        <button @click="getPixabayImages()" style="border: none;">
+                                            Load more
+                                        </button>
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </div>
+                
+                            </div>
+
+                            <div class="image-video" style="margin-top: 1.5rem;"><p>Show Button</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="end_result.show_button_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4" v-show="end_result.show_button_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                    <p>Button Text</p> 
+                                    <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="end_result.button_text">
+                                    </div>
+                                    <div class="category-heading">
+                                        <p>Button Link</p> 
+                                        <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="end_result.button_link">
+                                    </div>
+                                </div>           
+                            </div>          
+                        </div>
+                        <div class="col-4" style=" background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
+                            <h5>Result Preview</h5>
+                            <div class="content" style="border-radius: 10px; border: none;">
+                                <p>This Quiz App Is Amazing</p> <!----> <!----> 
+                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal 3 -->
+<div class="modal fade" data-bs-backdrop="static" id="leadsModal" tabindex="-1" aria-labelledby="leadsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+      
+            <div class="modal-header"> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="closePopup()"></button>
+            </div>
+
+
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Edit Leads</h5>
+              
+                            <div class="sub-cart">
+                                <div class="category-heading">
+                                    <p>Lead Type</p> 
+                                    
+                                    <select class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" aria-label="Default select example" v-model="lead.type">
+                                        <option value="Email">Email</option>
+                                        <option value="Mobile">Mobile</option>
+                                        <option value="Email & Mobile">Email & Mobile</option>
+                                    </select>
+                                </div>             
+                            </div>
+
+
+                            <div class="image-video" style="margin-top: 1.5rem;"><p>Show Heading</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="lead.show_heading_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4"  v-show="lead.show_heading_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        
+                                        <textarea id="leadstextarea"></textarea>
+                                    </div>
+                                
+                                </div>
+                                
+                            </div>
+                            <div class="sub-cart">
+                                <div class="category-heading" >
+                                    <p>Name </p> 
+                                    <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;">
+                                </div>
+                                <div class="category-heading" v-if="lead.type == 'Email & Mobile' || lead.type == 'Email' ">
+                                    <p>Email</p> 
+                                    <input type="email" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;">
+                                </div>
+                                <div class="category-heading" v-if="lead.type == 'Email & Mobile' || lead.type == 'Mobile' ">
+                                    <p>Mobile</p> 
+                                    <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;">
+                                </div>
+                            </div>
+
+                            <div class="image-video" style="margin-top: 1.5rem;"><p>Add Image</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="lead.add_image_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4"  v-show="lead.add_image_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        <p>Add Image</p>
+                                        <span>
+                                            <span>
+                                                <svg class="svg-inline--fa fa-chevron-down fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                    <path
+                                                        fill="currentColor"
+                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                                    ></path>
+                                                </svg>
+                                                <!-- <i class="fas fa-chevron-down"></i> Font Awesome fontawesome.com -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="category-content">
+                                        <div class="cart-tags">
+                                            <div class="cart-tags-active first-tag" style="border-radius: 5px 0 0 5px;">Pixabay</div>
+                                            <div class="last-tag">Upload</div>
+                                        </div>
+
+                                        <div class="search-wrapper">
+                                            <img src="images/icons8-search-30.png" alt="spy glass icon" />
+                                            <input type="text" v-model="imageQuery" v-on:keyup.enter="getPixabayImages()"/>
+                                        </div>
+
+                                        <div class="default_imgs_container">
+                                            <div class="default-imgs" v-for="(pixaBayImage, index) in pixaBayImages">
+                                                <div style="cursor: pointer">
+                                                    <img :src="pixaBayImage.webformatURL" alt="Image" draggable="false" @click="saveLeadImage(index)" alt="..." class="img-thumbnail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button @click="getPixabayImages()" style="border: none;">
+                                            Load more
+                                        </button>
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </div>
+              
+                            </div>
+             
+                            <div class="image-video" style="margin-top: 1.5rem;">
+                                <p>Terms and Conditions</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="lead.terms_and_conditions_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4" v-show="lead.terms_and_conditions_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        <p>Privacy Text</p> 
+                                        <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="lead.privacy_text">
+                                    </div>
+                                    <div class="category-heading"><p>Privacy Link</p> 
+                                        <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="lead.privacy_link">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-video" style="margin-top: 1.5rem;">
+                                <p>GDPR</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="lead.GDPR_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4" v-show="lead.GDPR_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        <p>GDPR Text</p> 
+                                        <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model ="lead.GDPR_text">
+                                    </div>
+                                    <div class="category-heading">
+                                        <p>GDPR Description</p> 
+                                        <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model ="lead.GDPR_description">
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <div class="col-4" style="background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
+                            <h5>Result Preview</h5>
+                            <div class="content" style="border-radius: 10px; border: none;">
+                                <p>This Quiz App Is Amazing</p> <!----> <!----> 
+                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="closePopup()">Close</button>
+                <button type="button" class="btn btn-primary" @click="saveLead()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" data-bs-backdrop="static" id="questionsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Question</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="closePopup()"></button>
+            </div>
+        
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5>Edit Question</h5>
+                            <div class="image-video" style="margin-top: 1.5rem;"><p>Show Heading</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="question.show_heading_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4" v-show="question.show_heading_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        
+                                        <textarea id="questiontextarea" v-model="question.heading"></textarea>
+                                    </div>
+                                
+                                </div>
+                            
+                            </div>
+                            <div class="sub-cart">
+                                <div class="category-heading">
+                                    <p>currency</p> 
+                                    
+                                    <select class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" aria-label="Default select example" v-model="question.currency">
+                                    <option value="$">Dollar</option>
+                                    <option value="€">Euro</option>
+                                    <option value="₦">Naira</option>
+                                    </select>
+                                </div>
+                        
+                            </div>
+                        
+
+                            <div class="image-video" style="margin-top: 1.5rem;"><p>Add Image/Video</p> 
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="question.add_image_is_set">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4"  v-show="question.add_image_is_set">
+                                <div class="sub-cart">
+                                    <div class="category-heading">
+                                        <p>Add Image</p>
+                                        <span>
+                                            <span>
+                                                <svg class="svg-inline--fa fa-chevron-down fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                                    <path
+                                                        fill="currentColor"
+                                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                                                    ></path>
+                                                </svg>
+                                                <!-- <i class="fas fa-chevron-down"></i> Font Awesome fontawesome.com -->
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="category-content">
+                                        <div class="cart-tags">
+                                            <div class="cart-tags-active first-tag" style="border-radius: 5px 0 0 5px;">Pixabay</div>
+                                            <div class="last-tag">Upload</div>
+                                        </div>
+                                        <div class="search-wrapper">
+                                            <img src="images/icons8-search-30.png" alt="spy glass icon" /> 
+                                            <input type="text" v-model="imageQuery" v-on:keyup.enter="getPixabayImages()"/>
+                                        </div>
+
+                                        <div class="default_imgs_container">
+                                            <div class="default-imgs" v-for="(pixaBayImage, index) in pixaBayImages">
+                                                <div style="cursor: pointer">
+                                                    <img :src="pixaBayImage.webformatURL" alt="Image" draggable="false" @click="saveImage(index)" alt="..." class="img-thumbnail">
+                                                </div>                                        
+                                            </div>
+                                        </div>
+
+                                        <button @click="getPixabayImages()" style="border: none;">
+                                            Load more
+                                        </button>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="image-video" style="margin-top: 1.5rem;"><p>Answers</p> 
+                            <div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" v-model="question.answer_is_set">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4" v-show="question.answer_is_set">
+                            <div class="row">
+                                <div v-for="(answer, index)  in question.answers">
+                                    <div class="col-sm-6">
+                                        <div class="sub-cart">
+                                            <div class="category-heading">
+                                                <p>Answer Text</p> 
+                                                <input type="text" class="button_text" style="width: 80%; text-align: left; padding-left: 1rem;" v-model="question.answers.option">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="sub-cart">
+                                            <div class="category-heading">
+                                                <p>Amount</p> &nbsp;
+                                                <input type="text" class="button_text"  style="width: 80%; text-align: left; padding-left: 1rem;" v-model="question.answers.amount">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-2">
+                                        <div class="sub-cart">
+                                            <div class="category-heading">
+                                                <i class="fa fa-trash" aria-hidden="true" @click="removeAnswer()"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <br>
+                            <div class="add-question" style="cursor: pointer;" @click="addAnswer()">
+                                <img src="/assets/images/+.png" alt=""> 
+                                <p>Add Answers</p>
+                            </div>      
+                        </div>
+                        
+                        </div>
+                        <div class="col-4" style="
+                            background-color: #f9f9f9;
+                            border-radius: 10px;
+                            padding: 1.5rem;">
+                            <h5>Result Preview</h5>
+                            <div class="content" style="border-radius: 10px; border: none;">
+                                <p>This Quiz App Is Amazing</p> <!----> <!----> 
+                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="closePopup()">Close</button>
+                <button type="button" class="btn btn-primary" @click="saveQuestion()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" data-bs-backdrop="static" id="publishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+    
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Publish Option</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                        <button type="button" class="btn app-btn-outline-primary mb-1 btn-sm" @click="copyEmbed()">Copy Embed  <i class="fa fa-clipboard" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div class="col-6">
+                        <button type="button" class="btn app-btn-outline-primary mb-1 btn-sm">Copy Link  <i class="fa fa-clipboard" aria-hidden="true"></i></button>
+                        </div>       
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+                <button type="button" class="btn btn-primary" >Save changes</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        
+           
+  
+<div class="flowchart-example-container" id="example"></div>
+
+ 
+<button class="create_question_operator" >Create Question</button>
+<button class="create_leads_operator" >Create Lead</button>
+<button class="delete_selected_button">Delete selected operator / link</button>
+<button class="get_data">Publish data</button>
+ 
+  
+  
+        
+
+<textarea style="display: none;" id="publish-form" cols="30" rows="10">https://agency.eazyleadz.io/publish/form</textarea>
+<textarea style="display: none;" id="slug" cols="30" rows="10">5Lko5rCSYmucRx5wj73D</textarea> 
+<textarea style="display:none" id="embed_page">https://agency.eazyleadz.io/embed</textarea>
+<textarea style="display: none;" id="save_image_url">https://agency.eazyleadz.io/user.save_image</textarea>
+
+ 
+        
+  </div>
+
+</div>
+    
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.panzoom/3.2.2/jquery.panzoom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="https://cdn.rawgit.com/sdrdis/jquery.flowchart/master/jquery.flowchart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script src="https://agency.eazyleadz.io/assets/js/vue.js"></script>
+<script src="https://agency.eazyleadz.io/assets/js/axios.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://agency.eazyleadz.io/assets/js/dashboard.js"></script>
+
+<script src="https://agency.eazyleadz.io/assets/js/app/form.js"></script>
+<script type="text/javascript">
+// $(document).ready(function() {
+  // var div = document.getElementsByClassName('flowchart-operator-title');
+  //   div.innerHTML += "Here is some more data appended";
+
+    // var data = {
+    //   operators: {
+    //     operator1: {
+    //       top: 20,
+    //       left: 20,
+    //       properties: {
+    //         title: 'start',
+    //         inputs: {},
+    //         outputs: {
+    //           output_1: {
+    //             label: 'Output 1',
+    //           }
+    //         }
+    //       }
+    //     },
+    //     operator2: {
+    //       top: 80,
+    //       left: 300,
+    //       properties: {
+    //         title: 'result',
+    //         inputs: {
+    //           input_1: {
+    //             label: 'Input 1',
+    //           },
+              
+    //         },
+    //         outputs: {output_1: {
+    //             label: 'Output 1',
+    //           },}
+    //       }
+    //     },
+    //   },
+    //   links: {
+    //     // link_1: {
+    //     //   fromOperator: 'operator1',
+    //     //   fromConnector: 'output_1',
+    //     //   toOperator: 'operator2',
+    //     //   toConnector: 'input_2',
+    //     // },
+    //   }
+    // };
+
+    // Apply the plugin on a standard, empty div...
+    // var $flowchart = $('#example');
+    // $flowchart.flowchart({
+    //   data: data
+    // });
+    
+    // var operatorI = 0;
+    // $flowchart.siblings('.create_operator').click(function() {
+    //   var operatorId = 'created_operator_' + operatorI;
+    //   var operatorData = {
+    //     top: 60,
+    //     left: 500,
+    //     properties: {
+    //       title: 'Operator ' + (operatorI + 3),
+    //       inputs: {
+    //         input_1: {
+    //           label: 'Input 1',
+    //         }
+    //       },
+    //       outputs: {
+    //         output_1: {
+    //           label: 'Output 1',
+    //         }
+    //       },
+    //       body: `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    //               Launch demo modal
+    //             </button>`
+    //     }
+    //   };
+      
+    //   operatorI++;
+      
+    //   $flowchart.flowchart('createOperator', operatorId, operatorData);
+    // });
+    
+    // $flowchart.siblings('.delete_selected_button').click(function() {
+    //   $flowchart.flowchart('deleteSelected');
+    // });
+    
+    // $flowchart.siblings('.get_data').click(function() {
+    //   var data = $flowchart.flowchart('getData');
+    //   $('#flowchart_data').val(JSON.stringify(data, null, 2));
+    // });
+    
+    // $flowchart.siblings('.set_data').click(function() {
+    //   var data = JSON.parse($('#flowchart_data').val());
+    //   $flowchart.flowchart('setData', data);
+    // });
+   
+// });
+
+
+/// Start of new One
+
+//   $(document).ready(function() {
+//   var $flowchart = $('#example');
+//   var cx = $flowchart.width() / 2;
+//   var cy = $flowchart.height() / 2;
+
+  
+//   // Panzoom zoom handling...
+//   var possibleZooms = [0.5, 0.75, 1, 2, 3];
+//   var currentZoom = 2;
+//   var data = {};
+
+//   // Apply the plugin on a standard, empty div...
+//   $flowchart.flowchart({
+//     data: data,
+//     linkWidth: 5
+//   });
+
+//   $flowchart.parent().siblings('.delete_selected_button').click(function() {
+//     $flowchart.flowchart('deleteSelected');
+//   });
+
+//   var $draggableOperators = $('.draggable_operator');
+
+//   function getOperatorData($element) {
+//     var nbInputs = parseInt($element.data('nb-inputs'));
+//     var nbOutputs = parseInt($element.data('nb-outputs'));
+//     var data = {
+//       properties: {
+//         title: $element.text(),
+//         inputs: {},
+//         outputs: {}
+//       }
+//     };
+
+//     var i = 0;
+//     for (i = 0; i < nbInputs; i++) {
+//       data.properties.inputs['input_' + i] = {
+//         label: 'Input ' + (i + 1)
+//       };
+//     }
+//     for (i = 0; i < nbOutputs; i++) {
+//       data.properties.outputs['output_' + i] = {
+//         label: 'Output ' + (i + 1)
+//       };
+//     }
+
+//     return data;
+//   }
+
+//   var operatorId = 0;
+
+//   $draggableOperators.draggable({
+//     cursor: "move",
+//     opacity: 0.7,
+//     scroll: true,
+//     helper: 'clone',
+//     appendTo: 'body',
+//     zIndex: 1000,
+
+//     helper: function(e) {
+//       var $this = $(this);
+//       var data = getOperatorData($this);
+//       return $flowchart.flowchart('getOperatorElement', data);
+//     },
+//     stop: function(e, ui) {
+//       var $this = $(this);
+//       var elOffset = ui.offset;
+//       var containerOffset = $flowchart.offset();
+//       if (elOffset.left > containerOffset.left &&
+//         elOffset.top > containerOffset.top &&
+//         elOffset.left < containerOffset.left + $flowchart.width() &&
+//         elOffset.top < containerOffset.top + $flowchart.height()) {
+
+//         var flowchartOffset = $flowchart.offset();
+
+//         var relativeLeft = elOffset.left - flowchartOffset.left;
+//         var relativeTop = elOffset.top - flowchartOffset.top;
+
+//         var positionRatio = $flowchart.flowchart('getPositionRatio');
+//         relativeLeft /= positionRatio;
+//         relativeTop /= positionRatio;
+
+//         var data = getOperatorData($this);
+//         data.left = relativeLeft;
+//         data.top = relativeTop;
+//         $flowchart.flowchart('addOperator', data);
+//       }
+//     }
+//   });
+//   $flowchart.siblings('.delete_selected_button').click(function() {
+//       $flowchart.flowchart('deleteSelected');
+//     });
+// });
+
+  // $(document).ready(function() {
+  //     var data = {
+  //       operators: {
+  //         operator1: {
+  //           top: 20,
+  //           left: 20,
+  //           properties: {
+  //             title: 'Operator 1',
+  //             inputs: {},
+  //             outputs: {
+  //               output_1: {
+  //                 label: 'Output 1',
+  //               }
+  //             }
+  //           }
+  //         },
+  //         operator2: {
+  //           top: 80,
+  //           left: 300,
+  //           properties: {
+  //             title: 'Operator 2',
+  //             inputs: {
+  //               input_1: {
+  //                 label: 'Input 1',
+  //               },
+  //               input_2: {
+  //                 label: 'Input 2',
+  //               },
+  //             },
+  //             outputs: {}
+  //           }
+  //         },
+  //       },
+  //       links: {
+  //         link_1: {
+  //           fromOperator: 'operator1',
+  //           fromConnector: 'output_1',
+  //           toOperator: 'operator2',
+  //           toConnector: 'input_2',
+  //         },
+  //       }
+  //     };
+
+  //     // Apply the plugin on a standard, empty div...
+  //     var $flowchart = $('#example');
+  //     $flowchart.flowchart({
+  //       data: data
+  //     });
+      
+  //     var operatorI = 0;
+  //     $flowchart.siblings('.create_operator').click(function() {
+  //       var operatorId = 'created_operator_' + operatorI;
+  //       var operatorData = {
+  //         top: 60,
+  //         left: 500,
+  //         properties: {
+  //           title: 'Operator ' + (operatorI + 3),
+  //           inputs: {
+  //             input_1: {
+  //               label: 'Input 1',
+  //             }
+  //           },
+  //           outputs: {
+  //             output_1: {
+  //               label: 'Output 1',
+  //             }
+  //           }
+  //         }
+  //       };
+        
+  //       operatorI++;
+        
+  //       $flowchart.flowchart('createOperator', operatorId, operatorData);
+  //     });
+      
+  //     $flowchart.siblings('.delete_selected_button').click(function() {
+  //       $flowchart.flowchart('deleteSelected');
+  //     });
+  // });  
+</script>
+<script>
+  tinymce.init({
+    selector: '#leadstextarea',
+    // required by the code menu item
+    menubar: '',
+    // plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+</script>
+<script>
+  tinymce.init({
+    selector: '#questiontextarea',
+    // required by the code menu item
+    menubar: '',
+    // plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+</script>
+
+<script>
+  tinymce.init({
+    selector: '#start_textarea',
+    // required by the code menu item
+    menubar: '',
+    // plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+</script>
+
+<script>
+  tinymce.init({
+    selector: '#end_textarea',
+    // required by the code menu item
+    menubar: '',
+    // plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+  });
+</script>
+
+</body>
+</html>
