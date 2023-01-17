@@ -306,6 +306,13 @@ rem
     box-shadow: 0 0 0 0.2rem hsl(208deg 6% 54% / 50%);
 }
 
+/* ....Preview Section .... */
+
+.side-preview-container{
+    height: fit-content;
+}
+
+
 
 @media screen and (max-width: 1180px){
     .flowchart-example-container{
@@ -546,13 +553,18 @@ rem
                                     </div>  
                                 </div>
                             </div>
-                            <div class="col-4" style=" background-color: #f9f9f9; border-radius: 10px;padding: 1.5rem;">
+                            <div class="col-4 side-preview-container" style=" background-color: rgba(249, 249, 249, 1);; border-radius: 10px;padding: 2rem; margin-top: 30px;">
                                 <h5>Form Preview</h5>
                                 <div>
                                     {{start_result.form_title}}
                                 <div>
                                 </div>
-                                <button type="button" class="btn btn-primary">Primary</button>
+                                <div class="preview-img">
+                                    <img style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" src="images/preview-img.jpg" alt="">
+
+                                    <!-- <video style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" controls src=""></video> -->
+                                </div>
+                                <button style="width: 100%; " type="button" class="btn btn-primary">Start Preview</button>
                             </div>
                         </div>
                     </div>
@@ -669,11 +681,18 @@ rem
                                 </div>           
                             </div>          
                         </div>
-                        <div class="col-4" style=" background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
+                        <div class="col-4 side-preview-container" style=" background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
                             <h5>Result Preview</h5>
                             <div class="content" style="border-radius: 10px; border: none;">
                                 <p>This Quiz App Is Amazing</p> <!----> <!----> 
-                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+
+                                <div class="preview-img">
+                                    <img style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" src="images/preview-img.jpg" alt="">
+
+                                    <!-- <video style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" controls src=""></video> -->
+                                </div>
+
+                                <button style="border-radius: 5px; border: none; background-color: #0d6efd; color: #fff; padding: 0.5rem 0; width: 100%;">Result Preview</button>
                             </div>
                         </div>
                     </div>   
@@ -847,11 +866,18 @@ rem
                             </div>
             
                         </div>
-                        <div class="col-4" style="background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
+                        <div class="col-4 side-preview-container" style="background-color: #f9f9f9; border-radius: 10px; padding: 1.5rem;">
                             <h5>Result Preview</h5>
                             <div class="content" style="border-radius: 10px; border: none;">
                                 <p>This Quiz App Is Amazing</p> <!----> <!----> 
-                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+                                <div class="preview-img">
+                                    <img style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" src="images/preview-img.jpg" alt="">
+
+                                    <!-- <video style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" controls src=""></video> -->
+
+                                </div>
+
+                                <button style="border-radius: 5px; border: none; background-color: #0d6efd; color: #fff; padding: 0.5rem 0; width: 100%;">Result Preview</button>
                             </div>
                         </div>
                     </div>
@@ -1013,14 +1039,21 @@ rem
                         </div>
                         
                         </div>
-                        <div class="col-4" style="
+                        <div class="col-4 side-preview-container" style="
                             background-color: #f9f9f9;
                             border-radius: 10px;
                             padding: 1.5rem;">
                             <h5>Result Preview</h5>
                             <div class="content" style="border-radius: 10px; border: none;">
                                 <p>This Quiz App Is Amazing</p> <!----> <!----> 
-                                <button style="border-radius: 5px; border: none;">nn Quiz</button>
+                                <div class="preview-img">
+                                    <img style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" src="images/preview-img.jpg" alt="">
+
+                                    <!-- <video style="width: 100%; margin-bottom: 20px; margin-top: 15px; border-radius: 6px;" controls src=""></video> -->
+
+                                </div>
+
+                                <button style="border-radius: 5px; border: none; background-color: #0d6efd; color: #fff; padding: 0.5rem 0; width: 100%;">Result Preview</button>
                             </div>
                         </div>
                     </div>
@@ -1423,6 +1456,5 @@ rem
     toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
   });
 </script>
-
 </body>
 </html>
