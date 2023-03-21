@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="ai_tools.css">
+
+
+     <!-- add bootstrap 5 css file -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- add bootstrap 5 js file -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+ 
+ 
+     <!-- add bundel js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ 
+
+    <!-- .... Google Fonts .... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+     <!--  ....Google Font CDN .... -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <!-- ......Header Section....... -->
+    <header>
+        <div class="logo">
+            <h1>AgencyBee</h1>
+            <span id="hamburger_icon"><i class="fa-solid fa-bars hamburger"></i></span>
+        </div>
+        <div class="profile_container" id="profile">
+            <div style="margin-right:4px;"><img src="images/icons8-male-user-24 (1).png" alt=""></div>
+            <p class="my_account_text" style="color: #003559;">My Account</p>
+        </div>
+
+        <!-- .... PROFILE DROPDOWN ..... -->
+        <div class="profile-dropdown" id="profile-dropdown">
+            <a href="account.html/profile.html" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-circle-user item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>My Profile</p>
+                </div>
+            </a>
+            <a href="account.html/profile.html" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-lock item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Change Password</p>
+                </div>
+            </a>
+            <a href="" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-trophy item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Bonuses</p>
+                </div>
+            </a>
+            <a href="" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-sharp fa-solid fa-circle-question item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Support & Help</p>
+                </div>
+            </a>
+
+            <a href="" class="profile-dropdown-item">
+                <div class="profile-icon">
+                    <i class="fa-solid fa-right-from-bracket item_icon"></i>
+                </div>
+                <div class="profile-details">
+                    <p>Logout</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- ...Content and Sidebar ..... -->
+    <div class="content_sidebar">
+        <!-- .......Side Bar ............ -->
+        <div class="side_bar" id="side_bar">
+            <div class="side_bar_btn">
+                <a href="home_page.html" style="margin-top: 20px;">
+                    <div><img style="width: 22px;" src="images/icons8-home-50.png" alt=""></div>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="dashboard.html">
+                    <div><img src="images/icons8-asset-64.png" alt=""></div>
+                    <p>Assets</p>
+                </a>
+            </div>
+            <div class="side_bar_btn_ai">
+                <a href="ai_tools.html">
+                    <div><img style="width: 24px;" src="images/icons8-bot-50 (1).png" alt=""></div>
+                    <p>AI Tools</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="form.html">
+                    <div><img src="images/icons8-form-24.png" alt=""></div>
+                    <p>Form</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="lead_finder.html">
+                    <div><img src="images/icons8-find-user-male-30.png" alt=""></div>
+                    <p>Lead Finder</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="video_kit.html">
+                    <div><img style="width: 24px;" src="images/icons8-laptop-play-video-48.png" alt=""></div>
+                    <p>Video Kit</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="reseller_page.html">
+                    <div><img style="width: 24px;" src="images/icons8-credit-card-50.png" alt=""></div>
+                    <p>Reseller</p>
+                </a>
+            </div>
+            <div class="side_bar_btn">
+                <a href="whitelabel_page.html">
+                    <div><img style="width: 24px;" src="images/icons8-add-bookmark-50.png" alt=""></div>
+                    <p>Whitelabel</p>
+                </a>
+            </div>
+            <div class="side_bar_btn support_btn">
+                <a href="">
+                    <div><img style="width: 24px;" src="images/icons8-inquiry-24.png" alt=""></div>
+                    <p>Support</p>
+                </a>
+            </div>
+
+            <div class="side_bar_btn logout_btn">
+                <a href="">
+                    <div><img style="width: 24px;" src="images/icons8-logout-48.png" alt=""></div>
+                    <p>Logout</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- ......Content Section ....... -->
+        <div class="content_container">
+            <div class="content_main">
+                <!-- EMAIL WRITER FORM -->
+                <div class="form_container" data-categoryForm="email_writer">
+                    <form action="">
+                        <h3 style="text-align: center; margin-bottom: 15px; color: #003559; font-size: 25px;">Email Writer</h3>
+                        <div class="field">
+                            <p>Select Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <p>Email Description</p>
+                            <textarea></textarea>
+                        </div>
+
+                        <div class="field">
+                            <p>Target Audience</p>
+                            <input type="text">
+                        </div>
+
+                        <!-- <div class="field">
+                            <p>Lorem, ipsum</p>
+                            <input type="text">
+                        </div>
+
+                        <div class="field">
+                            <p>Email Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div> -->
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <div class="">
+                                    <p>Lorem, ipsum</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="field_right">
+                                <p>Tone of voice</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <p>Language</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                            <div class="field_right">
+                                <p>Tone of voice</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="btn_container">
+                            <button class="generate_btn">Generate Email</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- SOCIAL POST FORM -->
+                <div class="form_container" data-categoryForm="social_writer">
+                    <form action="">
+                        <h3 style="text-align: center; margin-bottom: 15px; color: #003559; font-size: 25px;">Social Post Writer</h3>
+                        <div class="field">
+                            <p>Select Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <p>Post Description</p>
+                            <textarea></textarea>
+                        </div>
+
+                        <div class="field">
+                            <p>Target Audience</p>
+                            <input type="text">
+                        </div>
+
+                        <!-- <div class="field">
+                            <p>Lorem, ipsum</p>
+                            <input type="text">
+                        </div>
+
+                        <div class="field">
+                            <p>Email Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div> -->
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <div class="">
+                                    <p>Lorem, ipsum</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="field_right">
+                                <p>Tone of voice</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <p>Email Type</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                            <div class="field_right">
+                                <p>Email Type</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="btn_container">
+                            <button class="generate_btn">Generate Email</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- BLOG POST FORM -->
+                <div class="form_container" data-categoryForm="blog_writer">
+                    <form action="">
+                        <h3 style="text-align: center; margin-bottom: 15px; color: #003559; font-size: 25px;">Blog Post Writer</h3>
+                        <div class="field">
+                            <p>Select Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <p>Post Description</p>
+                            <textarea></textarea>
+                        </div>
+
+                        <div class="field">
+                            <p>Target Audience</p>
+                            <input type="text">
+                        </div>
+
+                        <!-- <div class="field">
+                            <p>Lorem, ipsum</p>
+                            <input type="text">
+                        </div>
+
+                        <div class="field">
+                            <p>Email Type</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select name="" id="">
+                                <option value="">Outreach email</option>
+                                <option value="">Follow up emails</option>
+                                <option value="">Engagement emails</option>
+                            </select>
+                        </div> -->
+
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <div class="">
+                                    <p>Lorem, ipsum</p>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="field_right">
+                                <p>Tone of voice</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="field_db">
+                            <div class="field_left">
+                                <p>Email Type</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                            <div class="field_right">
+                                <p>Email Type</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="" id="">
+                                    <option value="">Outreach email</option>
+                                    <option value="">Follow up emails</option>
+                                    <option value="">Engagement emails</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="btn_container">
+                            <button class="generate_btn">Generate Email</button>
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <!-- RESULT FORM -->
+                <div class="result_generated_container" data-categoryForm="result_container">
+                    <div class="result_container_top">
+                        <div class="all_fav">
+                            <p>All (<span>0</span>)</p>
+                            <p>Favourite (<span>0</span>)</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <i class="fa-regular fa-pen-to-square" title="Edit" ></i>
+                                <i class="fa-regular fa-file" title="Save" style="display: none;"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-paste" title="Duplicate"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-regular fa-copy" title="Copy"></i>
+                            </div>
+                            
+                            <div class="icon" title="Favourite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <div class="icon">
+                                <i class="fa-regular fa-trash-can" title="Delete"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result" contenteditable="true">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, corrupti. Voluptates suscipit modi maiores aut expedita exercitationem quod debitis nulla autem inventore numquam sequi corrupti quia, provident unde fugit eligendi molestiae distinctio! Deserunt ex a voluptates excepturi officiis ea molestias commodi et, possimus repellendus iste, ipsam fuga laboriosam blanditiis velit voluptatum earum assumenda. Ullam enim necessitatibus consequatur, atque quia temporibus. Odio, nulla harum provident perspiciatis dolorem, voluptatem veritatis quo expedita iusto ex quibusdam ab veniam id cupiditate officia? Id laborum expedita repudiandae, magnam delectus explicabo ea ducimus temporibus, quas aperiam molestiae eaque autem. Laboriosam, delectus, voluptatibus quasi dignissimos perferendis dolorum minima enim animi eligendi at cumque, voluptatum eum. Numquam dolore commodi aperiam, totam optio unde quod nulla libero corrupti in alias eveniet delectus doloribus excepturi ducimus ipsa natus provident, maxime fugiat? Facere consequatur mollitia eum ullam ipsum impedit accusamus sunt? Aliquid, asperiores repellat et cumque adipisci dolores veritatis magni reprehenderit, libero necessitatibus aspernatur doloremque inventore vel? Doloremque unde nam dolorum dolorem illum placeat eum itaque, alias aspernatur! Quidem alias a nemo beatae tempora quam saepe dignissimos quia facere aspernatur omnis ipsam animi commodi maiores sequi natus repudiandae eligendi consequuntur accusamus totam repellendus labore, maxime cupiditate assumenda? Commodi incidunt nam optio.
+                    </div>
+                    <div class="btn_container">
+                        <button class="edit_btn">Edit Answers</button>
+                        <button class="gen_btn">Generate Copy</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- CONTENT RIGHT -->
+            <div class="content_right">
+                <div class="content_right_top">
+                    <h3 style="font-size: 25px;">Categories</h3>
+                    <hr style="margin-bottom: 0;">
+                </div>
+                <div class="content_right_bottom">
+                    <div class="cartegory_card" data-category="email_writer">
+                        <div class="head">
+                            <p><img src="images/icons8-composing-mail-50.png" alt=""> Email Writer</p>
+                        </div>
+                        <p class="text">
+                            Write high converting outreach, follow-up and engagement email swipes in 1-click.
+                        </p>
+                    </div>
+
+                    <div class="cartegory_card" data-category="social_writer">
+                        <div class="head">
+                            <p><img src="images/icons8-facebook-48.png" alt="" style="width: 22px;"> Social Post Writer</p>
+                        </div>
+                        <p class="text">
+                            Write engaging social content that creates buzz & drives attention to your offer.
+                        </p>
+                    </div>
+
+                    <div class="cartegory_card" data-category="blog_writer">
+                        <div class="head">
+                            <p><img src="images/icons8-writer-64.png" alt=""> Blog Post Writer</p>
+                        </div>
+                        <p class="text">
+                            Write professional blog post content to build expert authority in any niche.
+                        </p>
+                    </div>
+
+                    <div class="cartegory_card">
+                        <div class="head">
+                            <p><i class="fa-regular fa-envelope"></i> Social Post Writer</p>
+                        </div>
+                        <p class="text">
+                            Write engaging social content that creates buzz & drives attention to your offer.
+                        </p>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+<script src="dashboard.js"></script>
+<script src="ai_tools.js"></script>
+</body>
+</html>
+</body>
+</html>

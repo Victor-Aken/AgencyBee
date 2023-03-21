@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'roboto', sans-serif;
+    font-family: 'poppins', sans-serif !important;
     background-color: white;
 }
 
@@ -108,6 +108,9 @@ header .profile_container{
 
 
 
+
+
+
 /* ...... Content and Sidebar .... */
 .content_sidebar{
     display: flex;
@@ -180,12 +183,12 @@ header .profile_container{
 
 .support_btn{
     position: absolute;
-    top: 72%;
+    top: 74%;
 }
 
 .logout_btn{
     position: absolute;
-    top: 79%;
+    top: 81%;
 }
 
 
@@ -250,7 +253,7 @@ header .profile_container{
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,.125);
     
-
+   
     background-color: #b8dcf579;
     transition: all 0.4s ease-in-out;
     padding-left: 30px;
