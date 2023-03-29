@@ -162,6 +162,10 @@
         <!-- ......Content Section ....... -->
         <div class="content_container">
             <div class="top_container">
+                <div class="fm_lead_cont">
+                    <a class="find_lead" href="#">Find Leads</a>
+                    <a class="manage_lead" href="">Manage Leads</a>
+                </div>
                 <p>Find active Leads on our robust Lead Finder</p>
             </div>
 
@@ -188,6 +192,7 @@
                             <span><i class="fa-solid fa-star"></i></span>
                             <span><i class="fa-solid fa-star"></i></span>
                         </div>
+                        <button class="save_lead">Save</button>
                     </div>
                     <div class="info">
                         <p>Email:</p>
@@ -226,6 +231,7 @@
                             <span><i class="fa-solid fa-star"></i></span>
                             <span><i class="fa-solid fa-star"></i></span>
                         </div>
+                        <button class="save_lead">Save</button>
                     </div>
                     <div class="info">
                         <p>Email:</p>
@@ -252,8 +258,6 @@
                         <p>75 Not enough reviews for a good ranking</p>
                     </div>
                 </div>
-
-                
                 <div class="search_result_card">
                     <div class="info">
                         <p>Rating</p>
@@ -264,6 +268,7 @@
                             <span><i class="fa-solid fa-star"></i></span>
                             <span><i class="fa-solid fa-star"></i></span>
                         </div>
+                        <button class="save_lead">Save</button>
                     </div>
                     <div class="info">
                         <p>Email:</p>
@@ -290,7 +295,6 @@
                         <p>75 Not enough reviews for a good ranking</p>
                     </div>
                 </div>
-                
                 <div class="search_result_card">
                     <div class="info">
                         <p>Rating</p>
@@ -301,6 +305,7 @@
                             <span><i class="fa-solid fa-star"></i></span>
                             <span><i class="fa-solid fa-star"></i></span>
                         </div>
+                        <button class="save_lead">Save</button>
                     </div>
                     <div class="info">
                         <p>Email:</p>
@@ -327,13 +332,77 @@
                         <p>75 Not enough reviews for a good ranking</p>
                     </div>
                 </div>
-
                 
             </div>
+
+             <!-- ....Add Lead Form .... -->
+            <div class="save_lead_form" id="add_lead_form">
+                <form action="">
+                    <div class="heading">
+                        <h2>Add Lead to tag</h2>
+                        <i style="font-size: 20px;" id="close_add_lead_form" class="fa-solid fa-xmark"></i>
+                    </div>
+
+                    
+                    <div class="select_container">
+
+                        <div class="select_tag">
+                            <div class="select_btn_container" id="select_btn_container">
+                                <span class="select_btn_text">Select Tag</span>
+                                <span class="select_btn_arrow">
+                                    <i class="fa-solid fa-chevron-down arrow"></i>
+                                </span>
+                            </div>
+
+                            <ul class="tag_list">
+                                <div style="height: 120px; overflow-y: scroll;">
+                                    <li class="tag">
+                                        <span class="check">
+                                            <i class="fa-solid fa-check check_icon"></i>
+                                        </span>
+                                        <span class="tag_name">Restaurants in Portharcourt</span>
+                                    </li>
+                                    
+                                    <li class="tag">
+                                        <span class="check">
+                                            <i class="fa-solid fa-check check_icon"></i>
+                                        </span>
+                                        <span class="tag_name">Restaurants in Benin</span>
+                                    </li>
+                                    <li class="tag">
+                                        <span class="check">
+                                            <i class="fa-solid fa-check check_icon"></i>
+                                        </span>
+                                        <span class="tag_name">Restaurants in London</span>
+                                    </li>
+                                    <li class="tag">
+                                        <span class="check">
+                                            <i class="fa-solid fa-check check_icon"></i>
+                                        </span>
+                                        <span class="tag_name">Restaurants in Nigeria</span>
+                                    </li>
+                                </div>
+                              
+                            </ul>   
+                        </div>
+
+                    </div>
+
+                    <div class="all_btns_container">
+                        <button class="add_btn">Add</button>
+                        <button class="create_btn">Create new tag</button>
+                        <button class="cancel_btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+             <!-- ... Overlay ..... -->
+             <div class="overlay" id="overlay"></div>
 
         </div>
     </div>
     
 <script src="dashboard.js"></script>
+<script src="leads_finder.js"></script>
 </body>
 </html>

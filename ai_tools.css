@@ -3,6 +3,19 @@ body{
     background-color: #F6F6F8 !important;
 }
 
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #061a40,
+        #003559,
+        #0353a4,
+        #006daa,
+        #006daa    
+
+        /* #b9d6f2 */
+    );
+}
+
 /* .... Whitelabel Button */
 .side_bar .side_bar_btn_ai a{
     display: flex;
@@ -35,9 +48,9 @@ body{
 /* Main Content */
 .content_container .content_main{
     background-color: #fff;
-    padding: 30px 50px;
+    padding: 30px 0;
     margin-right: 350px;
-    height: 680px;
+    height: 670px;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
@@ -66,7 +79,7 @@ body{
    height: calc(100vh - 130px);
    overflow: hidden;
    overflow-y: scroll;
-   padding: 20px;
+   padding: 10px 20px 20px 20px;
 }
 
 .content_right_bottom .cartegory_card{
@@ -102,8 +115,42 @@ body{
     font-size: 14px;
 }
 
+.content_right_bottom .right_bottom_card  .quotes_container{
+    background-image: var(--gradient);
+    border-radius: 10px;
+    background-size: 300%;
+    animation: gradient 8s infinite alternate;
+    color: #fff;
+    padding: 14px;
+    height: 178px;
+    opacity: 0.9;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: left;
+    }
+
+    100%{
+        background-position: right;
+    }
+}
+
+.content_right_bottom .right_bottom_card{
+    background-image: url(images/clock-geb49a932c_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
 
 /* CATEGORY FORMS */
+
+.form_container{
+    padding: 0 50px;
+}
+
 
 .form_container .btn_container{
     text-align: center;
@@ -154,7 +201,8 @@ select{
 }
 
 select option{
-    background-color: #fff;
+    background-color: rgb(43, 42, 42);
+    color: #fff;
 }
 
 .form_container[data-categoryForm="email_writer"]{
@@ -264,6 +312,7 @@ input{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
+    padding-left: 50px;
 }
 
 .result_generated_container .result_container_top .all_fav{
@@ -272,8 +321,23 @@ input{
     gap: 10px;
 }
 .result_generated_container .result_container_top .all_fav p{
+    position: relative;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
+}
+
+.result_generated_container .result_container_top .all_fav p::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #023f9b;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.25s ease-in-out;
+}
+.result_generated_container .result_container_top .all_fav p:hover::after{
+   width: 100%;
 }
 .result_generated_container .result_container_top .all_fav p:hover{
    color:  #023f9b;
@@ -284,8 +348,8 @@ input{
     height: 510px;
     overflow: hidden;
     overflow-y: scroll;
-    border-top: 1px solid rgb(109, 108, 108);
-    border-bottom: 1px solid rgb(109, 108, 108);
+    border-top: 1px solid rgb(139, 139, 139);
+    border-bottom: 1px solid rgb(139, 139, 139);
     padding: 40px 40px 0 40px;
 }
 
@@ -345,7 +409,7 @@ input{
 
 
 .result_generated_container .btn_container{
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,6 +423,7 @@ input{
     border: 2px solid #003559;
     border-radius: 8px;
     transition: all 0.25s ease;
+    background-color: transparent;
 }
 .result_generated_container .btn_container .edit_btn:hover{
     background-color: #003559;

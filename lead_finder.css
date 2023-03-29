@@ -43,6 +43,42 @@ body{
     margin-right: 28px;
 }
 
+.top_container .fm_lead_cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.top_container .fm_lead_cont a{
+    text-decoration: none;
+}
+
+.top_container .fm_lead_cont .find_lead{
+    background-color: #003559;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid #003559;
+}
+.top_container .fm_lead_cont .find_lead:hover{
+    background-color: #023f9b;
+    scale: 1.02;
+
+}
+.top_container .fm_lead_cont .manage_lead{
+    background-color: transparent;
+    border: 2px solid #003559;
+    color: #003559;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.top_container .fm_lead_cont .manage_lead:hover{
+    background-color: #023f9b;
+    color: #fff;
+    border: 2px solid #023f9b;
+}
 
 
 .input_section{
@@ -118,9 +154,24 @@ body{
     justify-content: space-between;
 }
 
+.search_results_cards_container .search_result_card .info .save_lead{
+    border: none;
+    background-color: #023f9b;
+    border-radius: 4px;
+    padding: 8px 15px;
+    color: #fff;
+}
+
+.search_results_cards_container .search_result_card .info .save_lead:hover{
+    scale: 1.02;
+}
+
+
+
+
 .search_results_cards_container .search_result_card .info .star_rating_container{
     font-size: 13px;
-    color: purple;
+    color: #023f9b;
 }
 
 .search_results_cards_container .search_result_card .info p:nth-child(1){
@@ -145,6 +196,197 @@ body{
     max-width: 200px;
     height: fit-content;
     word-wrap: break-word;
+    color: #023f9b;
+}
+
+
+
+
+
+/* ..... Save Leads Form ..... */
+.save_lead_form{
+    border-radius: 10px;
+    position: fixed;
+    padding: 20px 30px;
+    height: fit-content;
+    width: 500px;
+    background-color: #fff;
+    top: 50%;
+    left: calc(50% - 276px);
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    scale: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.save_lead_form.active{
+    scale: 1;
+    opacity: 1;
+    pointer-events: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.save_lead_form form .heading{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #003559;
+}
+
+.save_lead_form form .heading i{
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save_lead_form form .heading i:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ... Select Tag Styling ...... */
+
+.save_lead_form form .select_container{
+   
+}
+
+
+.save_lead_form form .select_container .select_btn_container{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 6px;
+    background-color: #e8f0fe;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.tag_list{
+    width: 435px;
+    background-color: #e8f0fe;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    transition: all 0.4s ease-in;
+}
+
+.select_btn_container.open ~ .tag_list{
+   display: block;
+}
+
+
+.select_btn_arrow{
+    transition: all 0.3s ease-in-out;
+}
+
+.select_btn_container.open .select_btn_arrow{
+    transform: rotate(-180deg);
+}
+
+
+
+.tag_list .tag{
+    list-style-type: none;
+    padding:  16px 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+.tag_list .tag:hover{
+    background-color: rgb(204, 202, 202);
+    border-radius: 8px;
+}
+
+.tag_list .tag .check{
+    border: 1px solid #c0c0c0;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.tag.checked .check{
+    border: none;
+    background-color: blue;
+}
+
+.tag_list .tag .check .check_icon{
+    font-size: 14px;
+    transform: scale(0);
+}
+
+.tag.checked .check .check_icon{
+    transform: scale(1);
+    color: white;
+}
+
+
+
+.tag_list .tag .project_name{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Buttons Styling */
+
+.save_lead_form .all_btns_container{
+    margin-top: 40px;
+}
+.save_lead_form .all_btns_container button{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.save_lead_form .all_btns_container .add_btn{
+    background-color: #029C2D;
+    padding: 10px 30px;
+}
+
+
+.save_lead_form .all_btns_container .create_btn{
+    background-color: #023f9b;
+    padding: 10px 20px;
+}
+
+
+.save_lead_form .all_btns_container .cancel_btn{
+    background-color: #D9D9D9;
+    padding: 10px 20px;
+    color: black;
+}
+
+
+/*  ...... Overlay ...... */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: none;
+    transition: all 0.4s ease-in-out;
 }
 
 
