@@ -48,6 +48,7 @@ body{
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .top_container .fm_lead_cont a{
@@ -141,10 +142,12 @@ body{
 }
 
 .search_results_cards_container .search_result_card{
-    background-color: white;
+    background-color: #e9f1f7a6;
     box-shadow: 0 5px 10px rgba(0, 0, 10, 0.2);
     padding: 30px 16px;
     border-radius: 8px;
+    backdrop-filter: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
 }
 
 .search_results_cards_container .search_result_card .info{
@@ -212,7 +215,7 @@ body{
     width: 500px;
     background-color: #fff;
     top: 50%;
-    left: calc(50% - 276px);
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
     scale: 0;
@@ -226,9 +229,6 @@ body{
     scale: 1;
     opacity: 1;
     pointer-events: visible;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .save_lead_form form .heading{
@@ -289,6 +289,26 @@ body{
    display: block;
 }
 
+/* SROLL BAR */
+
+
+::-webkit-scrollbar{
+    width: 5px;
+ }
+ 
+ ::-webkit-scrollbar-track{
+     background-color: #fff;
+     margin-block: 10px;
+ }
+ 
+ 
+ ::-webkit-scrollbar-thumb{
+    /* background-color: #0d6efd; */
+    background-color: #003559;
+    border-radius: 100vw;
+     
+ }
+
 
 .select_btn_arrow{
     transition: all 0.3s ease-in-out;
@@ -309,7 +329,7 @@ body{
 
 
 .tag_list .tag:hover{
-    background-color: rgb(204, 202, 202);
+    background-color: rgba(204, 202, 202, 0.582);
     border-radius: 8px;
 }
 
@@ -356,6 +376,10 @@ body{
     border-radius: 5px;
     color: #fff;
 }
+.save_lead_form .all_btns_container button:hover{
+   opacity: 0.9;
+   scale: 1.02;
+}
 
 .save_lead_form .all_btns_container .add_btn{
     background-color: #029C2D;
@@ -374,6 +398,80 @@ body{
     padding: 10px 20px;
     color: black;
 }
+
+/* CREATE  NEW TAG */
+.create-tag-form{
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    scale: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 5;
+}
+
+.create-tag-form.active{
+    scale: 1;
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.create-tag-form form h3{
+    color: #003559;
+}
+
+.create-tag-form form .tag-name-input{
+    margin: 15px 0;
+}
+
+
+.create-tag-form form .tag-name-input input{
+    border: 1px solid gray;
+    background-color: #e8f0fe;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.create-tag-form form .create-tag-btn, .create-tag-form form .cancel-tag-btn{
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+
+}
+
+.create-tag-form form .create-tag-btn{
+    background-color: #023f9b;
+    color: #fff;
+}
+
+
+.create-tag-form form .create-tag-btn:hover{
+    background-color: #023f9bef;
+    scale: 1.02;
+}
+
+
+.create-tag-form form .cancel-tag-btn{
+    background-color: #c0c0c0c0;
+    color: black;
+}
+
+
+.create-tag-form form .cancel-tag-btn:hover{
+    scale: 1.02;
+}
+
+
+
 
 
 /*  ...... Overlay ...... */

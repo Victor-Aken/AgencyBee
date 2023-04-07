@@ -40,7 +40,9 @@
 
 .content_container .cards_container .card button{
     cursor: pointer;
-    padding: 10px 30px;
+    width: 140px;
+    padding:  0 10px;
+    height: 40px;
     border: 1px solid #003559;
     font-size: 14px;
     font-family: Verdana;

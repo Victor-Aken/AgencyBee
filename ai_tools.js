@@ -68,3 +68,45 @@ saveIcons.forEach( (saveIcon) => {
       editIcon.style.display = 'inline';
    })
 })
+
+// QUOTE SLIDER
+
+const quotes = document.querySelectorAll('.quote');
+const indicator = document.querySelectorAll('.dot');
+
+let counter = 0;
+
+function switchQuote(currentQuote){
+   currentQuote.classList.add('active');
+   let quoteId = currentQuote.getAttribute('attr');
+
+   if(quoteId > counter){
+      quotes[counter].style.animation = 'next1 0.5s ease-in forwards';
+      counter = quoteId;
+      quotes[counter].style.animation = 'next2 0.5s ease-in forwards';
+   } else if( quoteId == counter){ 
+
+      return;
+   } else{
+      quotes[counter].style.animation = 'prev1 0.5s ease-in forwards';
+      counter = quoteId;
+      quotes[counter].style.animation = 'prev2 0.5s ease-in forwards';
+   }
+}
+
+// Auto Sliding
+function slideNext(){
+   quotes[counter].style.animation = 'next1 0.5s ease-in forwards';
+   if( counter >= quotes.length - 1 ){
+      counter = 0;
+   } else{
+      counter++;
+   }
+
+   quotes[counter].style.animation = 'next2 0.5s ease-in forwards';
+}
+
+function autoSlide(){
+   deleteInterval = setInterval( slideNext, 15000);
+}
+autoSlide();

@@ -119,12 +119,94 @@ body{
     background-image: var(--gradient);
     border-radius: 10px;
     background-size: 300%;
-    animation: gradient 8s infinite alternate;
+    animation: gradient 10s infinite alternate;
     color: #fff;
-    padding: 14px;
-    height: 178px;
-    opacity: 0.9;
+    padding: 18px;
+    height: 185px;
+    opacity: 0.8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
+
+.quotes_container .indicators{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quotes_container .indicators .dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    opacity: 0;
+} 
+
+.quotes_container .quote{
+    width: 100%;
+    font-size: 16px;
+    position: absolute;
+    padding: 18px;
+    color: #fff;
+}
+
+.quotes_container .quote:not(.active){
+    left: -100%;
+}
+
+/* KEYFRAMES */
+
+/* Keyframes for quote slider */
+@keyframes next1 {
+
+    from{
+        left: 0%;
+    }
+    to{
+        left:  -100%;
+    }
+}
+
+@keyframes next2 {
+
+    from{
+        left: 100%;
+    }
+    to{
+        left:  0%;
+    }
+}
+
+@keyframes prev1 {
+
+    from{
+        left: 0%;
+    }
+    to{
+        left:  100%;
+    }
+}
+
+@keyframes prev2 {
+
+    from{
+        left: -100%;
+    }
+    to{
+        left:  0%;
+    }
+}
+
+
 
 @keyframes gradient {
     0%{
@@ -137,10 +219,11 @@ body{
 }
 
 .content_right_bottom .right_bottom_card{
-    background-image: url(images/clock-geb49a932c_1280.jpg);
+    background-image: url(images/Rectangle\ 1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
    
 }
 

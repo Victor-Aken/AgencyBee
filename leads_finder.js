@@ -1,9 +1,10 @@
 
 
-// ...Open Add Team Member Form ... //
+// ...Open save lead Form ... //
 let saveLeadForm = document.getElementById('add_lead_form');
 let saveLeadBtns = document.querySelectorAll('.save_lead');
 let closeSaveLeadFormBtn = document.getElementById('close_add_lead_form');
+let cancelSaveLeadBtn = document.querySelector('.cancel_btn');
 
 saveLeadBtns.forEach( saveLeadBtn => {
     saveLeadBtn.addEventListener('click', () => {
@@ -19,16 +20,24 @@ closeSaveLeadFormBtn.addEventListener( 'click', () => {
     overlay.style.display = "none";
 })
 
+cancelSaveLeadBtn.addEventListener( 'click', (e) => {
+    e.preventDefault();
+    saveLeadForm.classList.remove('active');
+    overlay.style.display = "none";
+})
+
+//OVERLAY
 let overlay = document.getElementById('overlay');
 overlay.addEventListener( 'click', (e) => {
-    if( e.target !== saveLeadForm ){
+    if( e.target !== saveLeadForm || e.target !== createTagForm ){
         saveLeadForm.classList.remove('active');
+        createTagForm.classList.remove('active');
         overlay.style.display = "none";
     }
 })
 
 
-// ..... SELECT PROJECT OPEN ....... //
+// ..... SELECT TAG OPEN ....... //
 let selectTagBtn = document.getElementById('select_btn_container');
 let tags = document.querySelectorAll('.tag');
 
@@ -55,3 +64,24 @@ tags.forEach( eachTag => {
     })
 })
 
+
+// CREATE NEW TAG
+const createTagBtn = document.querySelector('.create_btn');
+const cancelTagBtn = document.querySelector('.cancel-tag-btn');
+const createTagForm = document.querySelector('.create-tag-form');
+
+createTagBtn.addEventListener( 'click', (e) => {
+    e.preventDefault();
+
+    saveLeadForm.classList.remove('active');
+    overlay.style.display = "block";
+    createTagForm.classList.add('active');
+
+});
+
+cancelTagBtn.addEventListener( 'click', (e) => {
+    e.preventDefault();
+    overlay.style.display = "none";
+    createTagForm.classList.remove('active');
+
+});
