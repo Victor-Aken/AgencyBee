@@ -453,6 +453,34 @@ input{
     height: 20px;
 }
 
+/* SHOW COPIED */
+.result_generated_container .result_container .result .icons .copy-icon-cont{
+    position: relative;
+}
+.result_generated_container .result_container .result .icons .copy-icon-cont .copied-text{
+    position: absolute;
+    top: -45px;
+    left: -30px;
+    border: 1px solid #dbe8fc;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.1s;
+}
+
+.result_generated_container .result_container .result .icons .copy-icon-cont .copied-text.active{
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: visible;
+}
+
+
+
 .result_generated_container .result_container .result .icons .icon i{
     padding: 2px;
     cursor: pointer;
