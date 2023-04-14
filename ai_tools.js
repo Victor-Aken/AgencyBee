@@ -66,6 +66,7 @@ generateBtns.forEach( generateBtn => {
          <p class="result_text">
                RESULT FROM AI DISPLAYED HERE!
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, incidunt. Qui, doloribus necessitatibus. Repellendus, assumenda optio sequi magnam quibusdam sint sit explicabo, excepturi amet laboriosam autem ducimus dolor animi eos quis tenetur odio. Ipsa et, voluptate atque quod quos qui ratione sit! Aperiam, quia excepturi illo id perspiciatis saepe voluptas similique vitae, impedit animi quo minus nostrum aut repudiandae, aliquam nobis. Cum cumque enim similique molestias aliquam magnam, ipsa perspiciatis hic recusandae nesciunt velit rerum quis sequi, delectus doloremque quaerat odio autem quia nulla obcaecati esse, laudantium id voluptate maiores! Doloribus suscipit nisi laborum, commodi atque, magni quasi perferendis obcaecati distinctio libero debitis voluptatem itaque! Perferendis necessitatibus, mollitia possimus iusto pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fugit, pariatur numquam ratione quidem labore perferendis doloribus provident doloremque nisi dolor quas.
+               saepe voluptas similique vitae, impedit animi quo minus nostrum aut repudiandae, aliquam nobis. Cum cumque enim similique molestias aliquam magnam, ipsa perspiciatis hic recusandae nesciunt velit rerum quis sequi, delectus doloremque quaerat odio autem.
          </p>
       </div>`
 
