@@ -142,7 +142,8 @@ body{
 }
 
 .search_results_cards_container .search_result_card{
-    background-color: #e9f1f7a6;
+    /* background-color: #e9f1f7a6; */
+    /* background-color: #F6F6F8; */
     box-shadow: 0 5px 10px rgba(0, 0, 10, 0.2);
     padding: 30px 16px;
     border-radius: 8px;

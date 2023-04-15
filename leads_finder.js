@@ -12,6 +12,7 @@ saveLeadBtns.forEach( saveLeadBtn => {
     
         saveLeadForm.classList.add('active');
         overlay.style.display = "block";
+        createNewTag();
     })
 })
 
@@ -70,18 +71,21 @@ const createTagBtn = document.querySelector('.create_btn');
 const cancelTagBtn = document.querySelector('.cancel-tag-btn');
 const createTagForm = document.querySelector('.create-tag-form');
 
-createTagBtn.addEventListener( 'click', (e) => {
-    e.preventDefault();
+function createNewTag() {
 
-    saveLeadForm.classList.remove('active');
-    overlay.style.display = "block";
-    createTagForm.classList.add('active');
+    createTagBtn.addEventListener( 'click', (e) => {
+        e.preventDefault();
 
-});
+        saveLeadForm.classList.remove('active');
+        overlay.style.display = "block";
+        createTagForm.classList.add('active');
 
-cancelTagBtn.addEventListener( 'click', (e) => {
-    e.preventDefault();
-    overlay.style.display = "none";
-    createTagForm.classList.remove('active');
+    });
 
-});
+    cancelTagBtn.addEventListener( 'click', (e) => {
+        e.preventDefault();
+        overlay.style.display = "none";
+        createTagForm.classList.remove('active');
+
+    });
+}
