@@ -81,6 +81,22 @@ body{
     border: 2px solid #023f9b;
 }
 
+.top_container .fm_lead_cont .create_btn{
+    background-color: transparent;
+    border: 2px solid #003559;
+    color: #003559;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+.top_container .fm_lead_cont .create_btn:hover{
+    background-color: #023f9b;
+    color: #fff;
+    border: 2px solid #023f9b;
+}
+
+
+
+
 
 .input_section{
     display: flex;
@@ -142,13 +158,16 @@ body{
 }
 
 .search_results_cards_container .search_result_card{
-    /* background-color: #e9f1f7a6; */
-    /* background-color: #F6F6F8; */
     box-shadow: 0 5px 10px rgba(0, 0, 10, 0.2);
     padding: 30px 16px;
     border-radius: 8px;
     backdrop-filter: 10px;
     border: 1px solid rgba(128, 128, 128, 0.171);
+    transition: all 0.25s ease-in-out;
+}
+
+.search_results_cards_container .search_result_card:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 10, 0.05);
 }
 
 .search_results_cards_container .search_result_card .info{
@@ -211,9 +230,9 @@ body{
 .save_lead_form{
     border-radius: 10px;
     position: fixed;
-    padding: 20px 30px;
+    padding: 20px 30px 0 30px;
     height: fit-content;
-    width: 500px;
+    width: 440px;
     background-color: #fff;
     top: 50%;
     left: 50%;
@@ -254,6 +273,41 @@ body{
 
 /* ... Select Tag Styling ...... */
 
+.select_container{
+    position: relative;
+}
+
+.select_container select{
+    width: 100%;
+    outline: none;
+    padding: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: #e8f0fe;
+    appearance: none;
+    border-color: grey;
+    cursor: pointer;
+}
+
+.select_container select option{
+    /* background-color:#023f9b;
+    color: #fff; */
+}
+
+
+.select_container .select_btn_arrow{
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+
+
+
+
+
+/* 
 .save_lead_form form .select_container{
    
 }
@@ -273,7 +327,7 @@ body{
 }
 
 .tag_list{
-    width: 435px;
+    width: 380px;
     background-color: #e8f0fe;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
@@ -288,7 +342,10 @@ body{
 
 .select_btn_container.open ~ .tag_list{
    display: block;
-}
+} */
+
+
+
 
 /* SROLL BAR */
 
@@ -310,7 +367,7 @@ body{
      
  }
 
-
+/* 
 .select_btn_arrow{
     transition: all 0.3s ease-in-out;
 }
@@ -365,12 +422,14 @@ body{
 .tag_list .tag .project_name{
     font-size: 16px;
     font-weight: 400;
-}
+} */
+
+
 
 /* Buttons Styling */
 
 .save_lead_form .all_btns_container{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .save_lead_form .all_btns_container button{
     border: none;
@@ -387,11 +446,11 @@ body{
     padding: 10px 30px;
 }
 
-
+/* 
 .save_lead_form .all_btns_container .create_btn{
     background-color: #023f9b;
     padding: 10px 20px;
-}
+} */
 
 
 .save_lead_form .all_btns_container .cancel_btn{

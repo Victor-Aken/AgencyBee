@@ -12,7 +12,6 @@ saveLeadBtns.forEach( saveLeadBtn => {
     
         saveLeadForm.classList.add('active');
         overlay.style.display = "block";
-        createNewTag();
     })
 })
 
@@ -38,32 +37,6 @@ overlay.addEventListener( 'click', (e) => {
 })
 
 
-// ..... SELECT TAG OPEN ....... //
-let selectTagBtn = document.getElementById('select_btn_container');
-let tags = document.querySelectorAll('.tag');
-
-selectTagBtn.addEventListener( 'click', () =>{
-    selectTagBtn.classList.toggle('open');
-
-})
-
-
-tags.forEach( eachTag => {
-    eachTag.addEventListener( 'click', (e) => {
-
-        for( let i = 0; i < tags.length; i++){
-            if( tags[i] !== eachTag){
-                tags[i].classList.remove('checked');
-
-                eachTag.classList.add('checked');
-                let selectBtnText = document.querySelector('.select_btn_text');
-                selectBtnText.innerText = eachTag.children[1].innerText;
-                selectTagBtn.classList.remove('open');
-            }
-        }
-       
-    })
-})
 
 
 // CREATE NEW TAG
@@ -76,7 +49,7 @@ function createNewTag() {
     createTagBtn.addEventListener( 'click', (e) => {
         e.preventDefault();
 
-        saveLeadForm.classList.remove('active');
+        // saveLeadForm.classList.remove('active');
         overlay.style.display = "block";
         createTagForm.classList.add('active');
 
@@ -89,3 +62,37 @@ function createNewTag() {
 
     });
 }
+createNewTag();
+
+
+
+
+
+
+
+// ..... SELECT TAG OPEN ....... //
+// let selectTagBtn = document.getElementById('select_btn_container');
+// let tags = document.querySelectorAll('.tag');
+
+// selectTagBtn.addEventListener( 'click', () =>{
+//     selectTagBtn.classList.toggle('open');
+
+// })
+
+
+// tags.forEach( eachTag => {
+//     eachTag.addEventListener( 'click', (e) => {
+
+//         for( let i = 0; i < tags.length; i++){
+//             if( tags[i] !== eachTag){
+//                 tags[i].classList.remove('checked');
+
+//                 eachTag.classList.add('checked');
+//                 let selectBtnText = document.querySelector('.select_btn_text');
+//                 selectBtnText.innerText = eachTag.children[1].innerText;
+//                 selectTagBtn.classList.remove('open');
+//             }
+//         }
+       
+//     })
+// })
